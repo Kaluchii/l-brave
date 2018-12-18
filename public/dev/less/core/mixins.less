@@ -1,0 +1,41 @@
+.link(@color, @border, @hover, @border_h){
+  background: -moz-linear-gradient(to to left, @border, @border 100%);
+  background: -ms-linear-gradient(to left, @border, @border 100%);
+  background: -o-linear-gradient(to left, @border, @border 100%);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(@border), to(@border));
+  background: -webkit-linear-gradient(to left, @border, @border 100%);
+  background: linear-gradient(to left, @border, @border 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border', endColorstr='@border', GradientType=0);
+  background-position: 0 100%;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  color: @color;
+  &:hover{
+    cursor: pointer;
+    background: -moz-linear-gradient(to left, @border_h, @border_h 100%);
+    background: -ms-linear-gradient(to left, @border_h, @border_h 100%);
+    background: -o-linear-gradient(to left, @border_h, @border_h 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@border_h), to(@border_h));
+    background: -webkit-linear-gradient(to left, @border_h, @border_h 100%);
+    background: linear-gradient(to left, @border_h, @border_h 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: @hover;
+  }
+  &:focus{
+    outline: none;
+    background: -moz-linear-gradient(to left, @border_h, @border_h 100%);
+    background: -ms-linear-gradient(to left, @border_h, @border_h 100%);
+    background: -o-linear-gradient(to left, @border_h, @border_h 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@border_h), to(@border_h));
+    background: -webkit-linear-gradient(to left, @border_h, @border_h 100%);
+    background: linear-gradient(to left, @border_h, @border_h 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@border_h', endColorstr='@border_h', GradientType=0);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    color: @hover;
+  }
+}
