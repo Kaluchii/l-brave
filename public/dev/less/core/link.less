@@ -1,0 +1,19 @@
+@import "variables";
+
+.b-link {
+  outline: none;
+  text-decoration: none;
+}
+
+.b-link_style_accent {
+  color: @accent;
+
+  &:hover {
+    color: @accentHover;
+    border-color: @accentHover;
+  }
+}
+
+.b-link_style_underline {
+  border-bottom: 1px solid @accent;
+}

@@ -2,6 +2,9 @@ var gulp         = require('gulp'),
 
     autoprefixer = require('gulp-autoprefixer'),
     less         = require('gulp-less'),
+    cleancss     = require('gulp-cleancss'),
+    uglify       = require('gulp-uglify'),
+    notify       = require('gulp-notify'),
     cssmin       = require('gulp-cssmin'),
     csscomb      = require('gulp-csscomb'),
     postcss      = require('gulp-postcss'),
@@ -14,7 +17,7 @@ var gulp         = require('gulp'),
 
     changeCase   = require('change-case'),
     watch        = require('gulp-watch'),
-    livereload   = require('gulp-livereload'),
+    browserSync  = require('browser-sync'),
     concat       = require('gulp-concat'),
     plumber      = require('gulp-plumber'),
     rename       = require('gulp-rename'),
@@ -22,6 +25,7 @@ var gulp         = require('gulp'),
     _if          = require('gulp-if'),
     sourcemaps   = require('gulp-sourcemaps'),
     args         = require('yargs'),
+    path         = require('path');
 
     jasmine     = require('gulp-jasmine');
 
@@ -30,7 +34,7 @@ var gulp         = require('gulp'),
 //======================================================================================================================
 // пути до файлов
 var config         = '/dev/config',
-    dev_css        = 'dev/less/',
+    dev_css        = './dev/less/',
     dev_img        = 'dev/img/',
     production_css = './css/',
     production_img = './img/',
@@ -44,15 +48,45 @@ var image_ext = '{png,Png,PNG,jpg,Jpg,JPG,jpeg,Jpeg,JPEG,gif,Gif,GIF,bmp,BMP,Bmp
 
 
 
-//======================================================================================================================
-//-- js Test --
-//======================================================================================================================
-gulp.task('js:test', function(){
-    gulp.src('./dev/test.js')
-        .pipe(jasmine());
-// TODO: реализовать передачу параметра для тестов - имени файла. Если не передан то выполнить ВСЕ тесты
+gulp.task('less', function () {
+    return gulp.src('./src/less/**/*.less')
+        .pipe(less({
+            paths: [ path.join(__dirname, 'less', 'includes') ]
+        }))
+        .on("error", notify.onError())
+        .pipe(concat('style.css'))
+        .pipe(gulp.dest('./src/assets/css'))
+        .pipe(cleancss({
+            level: {
+                1: {
+                    specialComments: false
+                }
+            }
+        }))
+        .pipe(rename({
+            suffix: '.min',
+            prefix: ''
+        }))
+        .pipe(gulp.dest('./src/assets/css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
 });
-//======================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //======================================================================================================================
@@ -63,12 +97,12 @@ gulp.task('style', function () {
         .pipe(plumber())
         .pipe(_if(isProduction, sourcemaps.init()))// Если передан ключ --production то sourcemap не пишется.
         .pipe(less())
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie9', 'opera 12.1', 'chrome', 'ff', 'ios'))
+        .pipe(autoprefixer('last 20 version', 'safari 5', 'ie 8', 'ie9', 'opera 12.1', 'chrome', 'ff', 'ios'))
         .pipe(csscomb('./dev/config/.csscomb.json'))
         .pipe(_if(!isProduction, cssmin())) // Если передан ключ --production то css файл будет минимизирован и оптимизирован
         .pipe(_if(isProduction, sourcemaps.write() )) // Если передан ключ --production то sourcemap не пишется.
         .pipe(gulp.dest(production_css))
-        .pipe(livereload())
+        // .pipe(livereload())
 });
 //======================================================================================================================
 
@@ -125,26 +159,26 @@ gulp.task('image', function () {
     gulp.src(dev_img + '**.' + image_ext)
         .pipe(plumber())
         .pipe(imagemin({
-            progressive      : false,
+            progressive      : true,
             interlaced       : true,
             optimizationLevel: 7
         }))
-        .pipe(rename(function (path) {
-            path.basename = changeCase.lowerCase(path.basename); // Запись файлов в нижнем регистре вместе с расширением
-            path.extname  = changeCase.lowerCase(path.extname);  // Запись файлов в нижнем регистре вместе с расширением
+        .pipe(rename(function (filePath) {
+            filePath.basename = changeCase.lowerCase(filePath.basename); // Запись файлов в нижнем регистре вместе с расширением
+            filePath.extname  = changeCase.lowerCase(filePath.extname);  // Запись файлов в нижнем регистре вместе с расширением
         }))
         .pipe(gulp.dest(production_img))
-        .pipe(livereload());
+        /*.pipe(livereload())*/;
     // Оптимизация векторных файлов ( пока только SVG )
     gulp.src(dev_img + '*.svg')
         .pipe(plumber())
         .pipe(svgmin())
-        .pipe(rename(function (path) {
-            path.basename = changeCase.lowerCase(path.basename);
-            path.extname  = changeCase.lowerCase(path.extname);
+        .pipe(rename(function (filePath) {
+            filePath.basename = changeCase.lowerCase(filePath.basename);
+            filePath.extname  = changeCase.lowerCase(filePath.extname);
         }))
         .pipe(gulp.dest(production_img))
-        .pipe(livereload());
+        /*.pipe(livereload())*/;
 });
 //======================================================================================================================
 
@@ -156,7 +190,7 @@ gulp.task('image', function () {
 // Так же следит за новыми файлами изображений - копирует их в рабочую директорию, оптимизирует и переводит в нижний регистр
 // TODO: для картинок сделать CHANGED копирование и оптимизация только изменных файлов
 gulp.task('watch', function () {
-    livereload.listen();
+    // livereload.listen();
     gulp.watch(dev_img + '*.*', {cwd: './'}, ['image']);
     gulp.watch(dev_css + '*.less', {cwd: './'}, ['style']);
     gulp.watch(dev_css + '**/*.less', {cwd: './'}, ['style']);

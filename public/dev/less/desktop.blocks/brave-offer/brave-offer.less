@@ -1,0 +1,72 @@
+.brave-offer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 468px;
+  padding: 35px 25px 85px;
+  text-align: center;
+
+  &--1{
+    background: url("/img/join-brave_offer-bg_1.jpg") no-repeat center / cover;
+  }
+
+  &--2{
+    background: url("/img/join-brave_offer-bg_2.jpg") no-repeat center / cover;
+  }
+
+  &--3{
+    background: url("/img/join-brave_offer-bg_3.jpg") no-repeat center / cover;
+  }
+
+  &__top{
+    color: @c-main-light;
+  }
+
+  &__title{
+    font-size: @fz-4;
+    font-weight: @fw-bold;
+    line-height: @lh-for-medium;
+  }
+
+  &__description{
+    margin-top: 30px;
+    font-size: @fz-6;
+    line-height: @lh-for-small;
+  }
+
+  &__bottom{}
+
+  &__price-wrap{
+    line-height: 1;
+    color: @c-main-light;
+    white-space: nowrap;
+  }
+
+  &__about-discount{
+    margin-bottom: 8px;
+    font-size: @fz-7;
+  }
+
+  &__old-price{
+    margin-right: 3px;
+    font-size: @fz-6;
+    color: @c-main-orange;
+    text-decoration: line-through;
+  }
+
+  &__price{
+    font-size: @fz-3;
+    font-weight: @fw-bold;
+  }
+
+  &__btn-wrap{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn{
+    width: 170px;
+  }
+}
