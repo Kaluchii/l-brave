@@ -17,8 +17,8 @@ return [
         //Предпоследнее место где формы смотрят: from, host, port, encryption, password, to
         //Здесь можно настроить конфиг из админки
         //доп. поля формате qs конфига
-        'string' => ['descr1', 'descr2'],
-        'int' => ['number1', 'number2']
+//        'string' => ['descr1', 'descr2'],
+//        'int' => ['number1', 'number2']
     ],
     'mailfromac' => [
         //Подчинен блоку feedback
@@ -27,20 +27,16 @@ return [
     'forms' => [
         //Блоки форм
         //предопределенные поля: from, subject, host, port, encryption, password, to
-        'form1' => [
+        'call' => [
             //доп. поля интерфейса и настройки формы в формате qs конфига
             //form1_mailto - подгруппа с одним полем mailto
-            'string' => ['descr1', 'descr2'],
-            'int' => ['number1', 'number2'],
 
             'form_fields' => [
                 //Каждой форме добавляется подгруппа с именем имяформы_mails, здесь настраивать поля для этой подгруппы
                 //from, subject, host, port, encryption, to, username, email, body, mailed  -  по умолчанию +
                 //доп. поля формы в формате qs конфига - для значений полей от пользователя сайта
-                'string' => ['descr1', 'descr2'],
-                'int' => ['number1', 'number2']
+                'string' => ['client_name', 'phone']
             ]
         ],
-        'form2' => []
     ]
 ];

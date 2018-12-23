@@ -16,6 +16,8 @@
 
     <script src="/admin/plugins/summernote/dist/summernote.js"></script>
     <script src="/admin/plugins/summernote/dist/lang/summernote-ru-RU.min.js"></script>
+    <script src="/admin/plugins/summernote/plugins/summernote-cleaner.js"></script>
+    <script src="/admin/plugins/summernote/plugins/summernote-ext-template.js"></script>
 
 
     <link rel="stylesheet" href="/admin/js/widgets/image/fileinput.css">
@@ -45,4 +47,5 @@
 
     <script src="/admin/js/app.js"></script>
     <script src="/admin/js/dist/js/app.min.js"></script>
+    <script src="/admin/js/costil.js"></script>
 @endsection

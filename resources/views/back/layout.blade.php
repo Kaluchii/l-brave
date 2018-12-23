@@ -5,7 +5,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>НазваниеСайта | Панель управления</title>
+    <title>Brave | Панель управления</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -36,35 +36,8 @@
             </a>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    {{--<li class="dropdown user user-menu">--}}
-                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
-                            {{--<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">--}}
-                            {{--<span class="hidden-xs">Alexander Pierce</span>--}}
-                        {{--</a>--}}
-                        {{--<ul class="dropdown-menu">--}}
-                            {{--<li class="user-header">--}}
-                                {{--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">--}}
-                                {{--<p>--}}
-                                    {{--Alexander Pierce - Web Developer--}}
-                                    {{--<small>Member since Nov. 2012</small>--}}
-                                {{--</p>--}}
-                            {{--</li>--}}
-                            {{--<li class="user-footer">--}}
-                                {{--<div class="pull-left">--}}
-                                    {{--<a href="#" class="btn btn-default btn-flat">Profile</a>--}}
-                                {{--</div>--}}
-                                {{--<div class="pull-right">--}}
-                                    {{--<a href="#" class="btn btn-default btn-flat">Sign out</a>--}}
-                                {{--</div>--}}
-                            {{--</li>--}}
-                        {{--</ul>--}}
-                    {{--</li>--}}
-                    <!-- Control Sidebar Toggle Button -->
-                    {{--<li>--}}
-                        {{--<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>--}}
-                    {{--</li>--}}
                     <li>
-                        <a href="/logout"><i class="fa  fa-arrow-circle-right"></i></a>
+                        <a href="/logout">Выход <i class="fa  fa-arrow-circle-right"></i></a>
                     </li>
                 </ul>
             </div>
@@ -87,16 +60,16 @@
         </section>
     </div>
 
-    {{-- Кнопка сохранить. Копирайт. Статус --}}
-    @include('back.footer')
-    @yield('footer')
+{{-- Кнопка сохранить. Копирайт. Статус --}}
+@include('back.footer')
+@yield('footer')
 
 
 
 
-    @include('back.special.right-tab')
+@include('back.special.right-tab')
 
-    <!-- /.control-sidebar -->
+<!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>

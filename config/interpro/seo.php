@@ -3,15 +3,12 @@
 return [
     'fields'=>
         [
-            'seotitle',
-            'seodescription',
-            'seokeywords'
+            'seo_title',
+            'seo_description',
+            'seo_keywords'
         ],
     'owners'=>
         [
-            'group_bird_type',
-            'group_bird_area',
-            'group_bird_class',
-            'block_birds'
+            'about'
         ]
 ];

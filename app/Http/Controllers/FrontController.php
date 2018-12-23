@@ -17,17 +17,34 @@ class FrontController extends Controller
     private $extract;
     public function __construct(ExtractAgent $ext){
         $this->extract = $ext;
-//        $scripts = $this->extract->getBlock('scripts');
-//        view()->share([
-//            'scripts' => $scripts,
-//        ]);
+        $scripts = $this->extract->getBlock('scripts');
+        view()->share([
+            'scripts' => $scripts,
+        ]);
     }
 
 
     public function getIndex(){
-//        $example = $this->extract->getBlock('example');
+        $this->extract->tuneSelection('reviews_list')->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('excuses_list')->sortBy('sorter','ASC');
+
+        $all_site = $this->extract->getBlock('all_site');
+        $about = $this->extract->getBlock('about');
+        $atmosphere = $this->extract->getBlock('atmosphere');
+        $reviews = $this->extract->getBlock('reviews');
+        $habit = $this->extract->getBlock('habit');
+        $challenge = $this->extract->getBlock('challenge');
+        $excuses = $this->extract->getBlock('excuses');
+        $offers = $this->extract->getBlock('offers');
         return view('front.index.index', [
-//            'example' => $example,
+            'all_site' => $all_site,
+            'about' => $about,
+            'atmosphere' => $atmosphere,
+            'reviews' => $reviews,
+            'habit' => $habit,
+            'challenge' => $challenge,
+            'excuses' => $excuses,
+            'offers' => $offers,
         ]);
     }
 }

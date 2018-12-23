@@ -1,15 +1,60 @@
 @section('main-menu')
     <section class="sidebar">
         <ul class="sidebar-menu">
-            <li class="header">Главная страница</li>
+            <li class="header">Страницы редактирования</li>
             <li>
                 <a href="/adm/all">
-                    <i class="fa fa-globe"></i> <span>Общие настройки</span>
+                    <i class="fa fa-circle-o"></i> <span>Общие настройки</span>
                 </a>
             </li>
             <li>
-                <a href="/adm/seo">
-                    <i class="fa fa-chrome"></i> <span>СЕО</span>
+                <a href="/adm/about">
+                    <i class="fa fa-circle-o"></i> <span>О Brave</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/atmosphere">
+                    <i class="fa fa-circle-o"></i> <span>Атмосфера</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/reviews">
+                    <i class="fa fa-circle-o"></i> <span>Отзывы</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/habit">
+                    <i class="fa fa-circle-o"></i> <span>Привычка</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/challenge">
+                    <i class="fa fa-circle-o"></i> <span>Вызов</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/excuses">
+                    <i class="fa fa-circle-o"></i> <span>Что мешает</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/offers">
+                    <i class="fa fa-circle-o"></i> <span>Вступление в Brave</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/meta">
+                    <i class="fa fa-circle-o"></i> <span>Мета-данные</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/post">
+                    <i class="fa fa-circle-o"></i> <span>Настройки почты</span>
+                </a>
+            </li>
+            <li>
+                <a href="/adm/scripts">
+                    <i class="fa fa-circle-o"></i> <span>Скрипты</span>
                 </a>
             </li>
 

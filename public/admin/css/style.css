@@ -1,6 +1,11 @@
 textarea.form-control {
     max-width: 100%;
     min-height: 200px;
+    resize: vertical;
+}
+textarea.textarea--small{
+    height: 55px;
+    min-height: inherit;
 }
 .groupflat-widget {
     margin-top: 20px;
@@ -27,6 +32,7 @@ textarea.form-control {
 
 .btn.btn-primary.btn-file {
     border-radius: 3px;
+    margin: 8px;
 }
 
 .form-group .file-preview-frame:not(.file-preview-error):hover {
@@ -62,6 +68,20 @@ textarea.form-control {
 /*
 Временно скрытые блоки и элементы*/
 
-.breadcrumb,   .fileinput-remove.fileinput-remove-button,   .navbar-custom-menu {
+.breadcrumb,   .fileinput-remove.fileinput-remove-button {
+    display: none;
+}
+
+
+
+.form-group.col-md-6 {
+    padding: 0 10px 0 0;
+}
+
+.form-group.col-md-6 + .form-group.col-md-6{
+    padding: 0 0 0 10px;
+}
+
+.note-editing-area > img {
     display: none;
 }

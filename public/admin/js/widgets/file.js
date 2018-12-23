@@ -52,7 +52,7 @@ var file = (function () {
 
                 var _template ='<div class="file-preview-frame">'+
                     '<div class="kv-file-content">'+
-                    '<p style="font-size: 120px"><i class="fa fa-file-pdf-o "></i></p>'+
+                    '<p style="font-size: 120px"><i class="fa fa-file-image-o "></i></p>'+
                     '</div>'+
                     '<div class="file-thumbnail-footer">'+
                     '<div class="file-actions">'+

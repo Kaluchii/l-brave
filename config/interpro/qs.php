@@ -2,55 +2,65 @@
 
 return [
 
-    'block_birds' => [
-        'string' => [
-            'descr'
-        ],
+    'scripts' => [
+        'text' => ['before_body_close', 'after_body_open', 'before_head_close'],
+    ],
 
+    'all_site' => [
+        'string' => ['inst', 'vk', 'fb', 'phone', 'copyright']
+    ],
+
+    'about' => [
+        'text' => ['subtitle_text', 'text'],
+        'image' => ['img']
+    ],
+
+    'atmosphere' => [
+        'text' => ['subtitle_text'],
+        /*'groups' => [
+            'galleries' => [
+                'string' => ['gallery_name', 'explanation'],
+                'image' => ['img']
+            ]
+        ]*/
+    ],
+
+    'reviews' => [
         'groups' => [
-            'group_bird_type' => [
-                'string' => [
-                    'descr'
-                ],
-                'group_bird_class' => [
-                    'example'
-                ],
-            ],
-            'group_bird_class' => [
-                'string' => [
-                    'descr'
-                ],
-                'image' => [
-                    'foto'
-                ],
-                'group_bird_type' => [
-                    'superior'
-                ]
-            ],
-            'group_bird_area' => [
-                'group_area' => [
-                    'area'
-                ],
-                'group_bird_type' => [
-                    'superior'
-                ]
+            'reviews_list' => [
+                'string' => ['person_name', 'person_occupation'],
+                'text' => ['text', 'objectives'],
+                'image' => ['img']
             ]
         ]
     ],
 
-    'block_areas' => [
-        'string' => [
-            'descr'
-        ],
+    'habit' => [
+        'text' => ['subtitle_text', 'text'],
+        'image' => ['img']
+    ],
 
+    'challenge' => [
+        'text' => ['text']
+    ],
+
+    'excuses' => [
         'groups' => [
-            'group_area' => [
-                'string' => [
-                    'descr'
-                ]
+            'excuses_list' => [
+                'string' => ['excuses_title'],
+                'text' => ['text']
             ]
         ]
+    ],
 
-    ]
+    'offers' => [
+        'string' => [
+            'offer_1_title', 'offer_2_title', 'offer_3_title',
+            'offer_1_price', 'offer_2_price', 'offer_3_price',
+            'offer_1_old_price', 'offer_2_old_price', 'offer_3_old_price',
+            'offer_1_discount', 'offer_2_discount', 'offer_3_discount'
+        ],
+        'text' => ['text', 'offer_1_text', 'offer_2_text', 'offer_3_text'],
+    ],
 
 ];

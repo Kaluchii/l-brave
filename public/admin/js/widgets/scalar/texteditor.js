@@ -24,10 +24,29 @@ var texteditor = (function () {
                 },
                 toolbar   : [
                     ['style', ['style', 'bold', 'italic', 'clear']],
-                    ['insert', ['picture', 'link', 'video', 'table']],
+                    ['insert', ['picture', 'link', 'table']],
                     ['paragraph', ['ul', 'ol', 'paragraph']],
-                    ['misc', ['fullscreen', 'codeview']]
+                    ['color', ['color']],
+                    ['hr', ['hr']],
+                    ['misc', ['fullscreen', 'codeview', 'cleaner']]
                 ],
+                styleTags : ['p', 'h2', 'h3', 'h4', 'h5'],
+                insertTableMaxSize: {
+                    col: 15,
+                    row: 50
+                },
+                cleaner:{
+                    notTime: 2400, // Time to display Notifications.
+                    action: 'button', // both|button|paste 'button' only cleans via toolbar button, 'paste' only clean when pasting content, both does both options.
+                    newline: '<br>', // Summernote's default is to use '<p><br></p>'
+                    notStyle: 'position:absolute;top:0;right:0', // Position of Notification
+                    icon: '<i class="note-icon-eraser"></i> Очистка стилей',
+                    keepHtml: true, // Remove all Html formats
+                    keepOnlyTags: ['<p>', '<div>', '<br>', '<hr>', '<pre>', '<ul>', '<ol>', '<table>', '<tbody>', '<tr>', '<td>', '<th>', '<iframe>', '<blockquote>', '<li>', '<big>', '<b>', '<strong>','<i>', '<a>', '<h1>', '<h2>', '<h3>', '<h4>', '<h5>', '<h6>', '<img>'], // If keepHtml is true, remove all tags except these
+                    keepClasses: false, // Remove Classes
+                    badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html', 'span', 'font'], // Remove full tags with contents
+                    badAttributes: ['style', 'start', 'dir'] // Remove attributes from remaining tags
+                },
                 callbacks : {
                     onImageUpload: function (files, editor, welEditable) {
                         sendFile(files[0], editor, welEditable);

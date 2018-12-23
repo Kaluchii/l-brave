@@ -2,19 +2,16 @@
 
 return [
 
-    'modimages.wmimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'about.img' => [
+        'resizes' => ['preview']
     ],
 
-    'modimages.maskimage' => [
-        'resizes' => ['res100x100', 'res400'],
-        'crops' => ['crop400x300']
+    'reviews_list.img' => [
+        'resizes' => ['preview']
     ],
 
-    'group_bird_class.foto' => [
-        'resizes' => ['res100x100', 'res400', 'res800', 'res1000'],
-        'crops' => ['crop800x600']
-    ]
+    'habit.img' => [
+        'resizes' => ['preview']
+    ],
 
 ];

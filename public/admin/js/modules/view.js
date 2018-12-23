@@ -46,11 +46,11 @@ var widgets_class = {
     texteditor: {
         class: '.form-control.text-editor',
         object: texteditor
-    },
+    },/*
     multiupload: {
         class: '.form-control.multiupload',
         object: multiupload
-    },
+    },*/
     file: {
         class: '.form-control.files',
         object: file

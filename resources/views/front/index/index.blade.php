@@ -38,25 +38,15 @@
 
         <section class="main-page__about about">
             <div class="about__header main-info">
-                <h2 class="main-info__title title-l1">Что такое Brave</h2>
-                <p class="main-info__text">Мы создали Brave, чтобы становиться сильней, умней и решительней.
-                    Это мужское сообщество, где вы совместите спарринги, тренировки, работу в команде и личностный рост.
-                </p>
+                <h2 class="main-info__title title-l1">{{ $about->title }}</h2>
+                <p class="main-info__text">{!! $about->subtitle_text !!}</p>
             </div>
             <div class="about__body">
                 <div class="about__img-wrap">
-                    <img src="/img/about_img.jpg" alt="" class="about__img">
+                    <img src="{{$about->img->link}}?{{$about->img->cache_index}}" alt="{{$about->img->alt}}" class="about__img">
                 </div>
                 <div class="about__info-col">
-                    <div class="about__text-wrap text-blocks">
-                        <p class="text-blocks__item">В основе Brave лежат физические тренировки и спарринги, упражнения
-                            для развития уверенности, дисциплины и целеустремленности.
-                        </p>
-                        <p class="text-blocks__item">Мужчина должен быть готов защитить семью, помочь слабому и
-                            показать своим примером то, чему хотим учить детей. Мужчина — это сила и характер.
-                            Его мы и стремимся развивать.
-                        </p>
-                    </div>
+                    <div class="about__text-wrap text-blocks">{!! $about->text !!}</div>
                     <div class="about__free-exercise free-exercise">
                         <p class="free-exercise__title title-l3">Бесплатная тренировка</p>
                         <p class="free-exercise__text">Сделайте первый шаг и запишитесь на бесплатную ознакомительную
@@ -78,10 +68,8 @@
 
         <section class="main-page__atmosphere atmosphere">
             <div class="atmosphere__header main-info main-info--white">
-                <h3 class="main-info__title title-l1">Атмосфера</h3>
-                <p class="main-info__text">Вступайте в сообщество, где царит поддержка, ободрение и трудолюбие.
-                    Завоюйте уважение и новых друзей.
-                </p>
+                <h3 class="main-info__title title-l1">{{ $atmosphere->title }}</h3>
+                <p class="main-info__text">{!! $atmosphere->subtitle_text !!}</p>
             </div>
             <div class="atmosphere__media-bundles-list media-bundles">
                 <div class="media-bundles__item">
@@ -115,7 +103,7 @@
             </div>
         </section>
 
-        <section class="main-page__opponents opponents">
+        {{--<section class="main-page__opponents opponents">
             <div class="opponents__header main-info">
                 <h2 class="main-info__title title-l1">Найдите соперника и друга</h2>
                 <p class="main-info__text">Выберите соперника по силам и вступите в спарринг.<br>
@@ -174,112 +162,47 @@
                     <a href="#" class="link">правилам Brave</a> под надзором инструктора и рефери.
                 </p>
             </div>
-        </section>
+        </section>--}}
 
 
         <section class="main-page__reviews reviews">
             <div class="reviews__slider js_reviews_slick">
+                @foreach($reviews->reviews_list_group as $item)
                 <div class="reviews__slide">
                     <div class="reviews__slide-container">
                         <div class="reviews__person-img-wrap">
-                            <img src="/img/reviews_1.jpg" alt="" class="reviews__img">
+                            <img src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->img->alt}}" class="reviews__img">
                         </div>
                         <div class="reviews__person-info">
-                            <div class="reviews__person-name">Борис Федоров</div>
-                            <div class="reviews__person-occupation">Предпринематель, 30 лет</div>
+                            <div class="reviews__person-name">{{ $item->person_name }}</div>
+                            <div class="reviews__person-occupation">{{ $item->person_occupation }}</div>
                             <div class="reviews__person-about-me-wrap">
-                                <span class="reviews__person-about-me">
-                                    В первую очередь, я стал дисциплинированней и спокойней. До сих пор помню, как дрожали колени, когда впервые вышел на спарринг. Соперник казался непобедимым, но поединок шел довольно ровно.
-                                    <span class="reviews__highlight">Я уступил по очкам, но добился огромной победы внутри.</span> Перестраивать себя сложно: дисциплина растет медленно, но я вижу результаты, совершаю маленькие шаги и двигаюсь вперед.
-                                </span>
+                                <span class="reviews__person-about-me">{!! $item->text !!}</span>
                             </div>
                             <div class="reviews__objectives-wrap">
                                 <div class="reviews__objectives-title">Цели за месяц</div>
-                                <div class="reviews__objectives">
-                                    Выполнил 100 отжиманий за раз<br>
-                                    Прошел через 15 поединков<br>
-                                    Увеличил зарплату в 2,5 раза
-                                </div>
+                                <div class="reviews__objectives">{!! $item->objectives !!}</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="reviews__slide">
-                    <div class="reviews__slide-container">
-                        <div class="reviews__person-img-wrap">
-                            <img src="/img/reviews_1.jpg" alt="" class="reviews__img">
-                        </div>
-                        <div class="reviews__person-info">
-                            <div class="reviews__person-name">Борис Федоров</div>
-                            <div class="reviews__person-occupation">Предпринематель, 30 лет</div>
-                            <div class="reviews__person-about-me-wrap">
-                                <span class="reviews__person-about-me">
-                                    В первую очередь, я стал дисциплинированней и спокойней. До сих пор помню, как дрожали колени, когда впервые вышел на спарринг. Соперник казался непобедимым, но поединок шел довольно ровно.
-                                    <span class="reviews__highlight">Я уступил по очкам, но добился огромной победы внутри.</span> Перестраивать себя сложно: дисциплина растет медленно, но я вижу результаты, совершаю маленькие шаги и двигаюсь вперед.
-                                </span>
-                            </div>
-                            <div class="reviews__objectives-wrap">
-                                <div class="reviews__objectives-title">Цели за месяц</div>
-                                <div class="reviews__objectives">
-                                    Выполнил 100 отжиманий за раз<br>
-                                    Прошел через 15 поединков<br>
-                                    Увеличил зарплату в 2,5 раза
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__slide">
-                    <div class="reviews__slide-container">
-                        <div class="reviews__person-img-wrap">
-                            <img src="/img/reviews_1.jpg" alt="" class="reviews__img">
-                        </div>
-                        <div class="reviews__person-info">
-                            <div class="reviews__person-name">Борис Федоров</div>
-                            <div class="reviews__person-occupation">Предпринематель, 30 лет</div>
-                            <div class="reviews__person-about-me-wrap">
-                                <span class="reviews__person-about-me">
-                                    В первую очередь, я стал дисциплинированней и спокойней. До сих пор помню, как дрожали колени, когда впервые вышел на спарринг. Соперник казался непобедимым, но поединок шел довольно ровно.
-                                    <span class="reviews__highlight">Я уступил по очкам, но добился огромной победы внутри.</span> Перестраивать себя сложно: дисциплина растет медленно, но я вижу результаты, совершаю маленькие шаги и двигаюсь вперед.
-                                </span>
-                            </div>
-                            <div class="reviews__objectives-wrap">
-                                <div class="reviews__objectives-title">Цели за месяц</div>
-                                <div class="reviews__objectives">
-                                    Выполнил 100 отжиманий за раз<br>
-                                    Прошел через 15 поединков<br>
-                                    Увеличил зарплату в 2,5 раза
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </section>
 
 
         <section class="main-page__habit habit">
             <div class="habit__header main-info">
-                <h3 class="main-info__title title-l1">Привычка побеждать</h3>
-                <p class="main-info__text">Чтобы развивать дисциплину и строить привычку достигать цель, мы делаем
-                    участникам вызовы. Это упражнения и простые задания, которые&nbsp;помогают выйти из зоны комфорта.
-                </p>
+                <h3 class="main-info__title title-l1">{{ $habit->title }}</h3>
+                <p class="main-info__text">{!! $habit->subtitle_text !!}</p>
             </div>
             <div class="habit__body">
                 <div class="habit__info-col">
-                    <div class="habit__text-wrap text-blocks text-blocks--center">
-                        <p class="text-blocks__item">За выполненный вызов участники получают рейтинг.
-                            Он дает доступ к более сложным вызовам и более ценным призам.
-                        </p>
-                        <p class="text-blocks__item">Вы соревнуетесь с друзьями, совершенствуетесь и можете
-                            завоевать награду, победив в ежемесячном вызове.
-                            Так рождается привычка побеждать. Для начала — свою лень.
-                        </p>
-                    </div>
+                    <div class="habit__text-wrap text-blocks text-blocks--center">{!! $habit->text !!}</div>
                     <p class="habit__change">Награда изменит вас навсегда</p>
                 </div>
                 <div class="habit__img-wrap">
-                    <img src="/img/habit-winning_img.jpg" alt="" class="habit__img">
+                    <img src="{{$habit->img->link}}?{{$habit->img->cache_index}}" alt="{{$habit->img->alt}}" class="habit__img">
                 </div>
             </div>
         </section>
@@ -287,11 +210,8 @@
 
         <section class="main-page__first-challenge first-challenge">
             <div class="first-challenge__wrapper">
-                <h3 class="first-challenge__title title-l1">Первый вызов</h3>
-                <p class="first-challenge__text">Мы делаем вам первый вызов —
-                    выполнять простое действие каждый день.<br>
-                    Вы готовы?
-                </p>
+                <h3 class="first-challenge__title title-l1">{{ $challenge->title }}</h3>
+                <p class="first-challenge__text">{!! $challenge->text !!}</p>
                 <div class="first-challenge__btn-wrap">
                     <a href="#" class="first-challenge__btn button"><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
                 </div>
@@ -299,7 +219,7 @@
         </section>
 
 
-        <section class="main-page__mailing mailing">
+        {{--<section class="main-page__mailing mailing">
             <div class="mailing__header main-info">
                 <h3 class="main-info__title title-l1">Еженедельная рассылка</h3>
                 <p class="main-info__text">Одно письмо в неделю — реальная история, скидки на абонементы и
@@ -314,7 +234,7 @@
                     <button class="mailing__btn button"><span class="button__text">ПОДПИСАТЬСЯ</span></button>
                 </div>
             </div>
-        </section>
+        </section>--}}
 
 
         <section class="main-page__instagram instagram">
@@ -322,142 +242,92 @@
             <div class="instagram__gallery">
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/instagram-image.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <div class="instagram__img-wrap">
+                        <a href="#" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <p class="instagram__subscribe-text">Подпишитесь на Brave в <a href="#" class="link bold">Инстаграме</a> и будьте в курсе наших новостей</p>
+            <p class="instagram__subscribe-text">Подпишитесь на Brave в <a href="{{ $all_site->inst }}" class="link bold">Инстаграме</a> и будьте в курсе наших новостей</p>
         </section>
 
 
         <section class="main-page__what-prevents what-prevents">
             <h3 class="what-prevents__title title-l1">Что мешает начать?</h3>
             <ul class="what-prevents__causes accordion js_accordion">
+                @foreach($excuses->excuses_list_group as $item)
                 <li class="accordion__item">
-                    <p class="accordion__item-title">Я подумаю, может начну попозже</p>
+                    <p class="accordion__item-title">{{ $item->excuses_title }}</p>
                     <div class="accordion__item-content-wrap">
                         <div class="accordion__item-content">
-                            <p class="accordion__text">Здорово! Надеемся, вам нравится и вы довольны результатом.
-                                Если станет скучно — попробуйте прийти к нам на бесплатную тренировку. У нас особенная
-                                атмосфера для занятий спортом.
-                            </p>
+                            <p class="accordion__text">{!! $item->text !!}</p>
                         </div>
                     </div>
                 </li>
-                <li class="accordion__item">
-                    <p class="accordion__item-title">Я пока не готов физически</p>
-                    <div class="accordion__item-content-wrap">
-                        <div class="accordion__item-content">
-                            <p class="accordion__text">Здорово! Надеемся, вам нравится и вы довольны результатом.
-                                Если станет скучно — попробуйте прийти к нам на бесплатную тренировку. У нас особенная
-                                атмосфера для занятий спортом.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item">
-                    <p class="accordion__item-title">Я не люблю драки, насилие и агрессию</p>
-                    <div class="accordion__item-content-wrap">
-                        <div class="accordion__item-content">
-                            <p class="accordion__text">Здорово! Надеемся, вам нравится и вы довольны результатом.
-                                Если станет скучно — попробуйте прийти к нам на бесплатную тренировку. У нас особенная
-                                атмосфера для занятий спортом.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item">
-                    <p class="accordion__item-title">Нет лишних денег, я могу тренироваться сам</p>
-                    <div class="accordion__item-content-wrap">
-                        <div class="accordion__item-content">
-                            <p class="accordion__text">Здорово! Надеемся, вам нравится и вы довольны результатом.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item">
-                    <p class="accordion__item-title">Я занят, времени совсем нет</p>
-                    <div class="accordion__item-content-wrap">
-                        <div class="accordion__item-content">
-                            <p class="accordion__text">Здорово! Надеемся, вам нравится и вы довольны результатом.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="accordion__item">
-                    <p class="accordion__item-title">Я уже тренируюсь</p>
-                    <div class="accordion__item-content-wrap">
-                        <div class="accordion__item-content">
-                            <p class="accordion__text">Здорово! Надеемся, вам нравится и вы довольны результатом.
-                            </p>
-                        </div>
-                    </div>
-                </li>
+                @endforeach
             </ul>
         </section>
 
@@ -470,7 +340,7 @@
         </section>
 
 
-        <section class="main-page__create-profile create-profile">
+        {{--<section class="main-page__create-profile create-profile">
             <div class="create-profile__wrapper">
                 <h3 class="create-profile__title title-l3">Создайте профиль</h3>
                 <p class="create-profile__text">Вы сможете пригласить на спарринг друга или участника Brave,
@@ -480,25 +350,29 @@
                     <a href="#" class="create-profile__btn button"><span class="button__text">СОЗДАТЬ</span></a>
                 </div>
             </div>
-        </section>
+        </section>--}}
 
 
         <section class="main-page__join-brave join-brave">
             <div class="join-brave__header main-info">
-                <h3 class="main-info__title title-l1">Вступите в Brave</h3>
-                <p class="main-info__text">
-                    Вы можете получить скидку до 35% приобретая <a href="#" class="link">комплект услуг</a>
-                </p>
+                <h3 class="main-info__title title-l1">{{ $offers->title }}</h3>
+                <p class="main-info__text">{!! $offers->text !!}</p>
             </div>
             <ul class="join-brave__offers">
                 <li class="join-brave__offer brave-offer brave-offer--1">
                     <div class="brave-offer__top">
-                        <div class="brave-offer__title">ПЕРВАЯ<br>ТРЕНИРОВКА</div>
-                        <div class="brave-offer__description">Экскурсия, инструктаж и занятие в группе для новых участников.</div>
+                        <div class="brave-offer__title">{!! $offers->offer_1_title !!}</div>
+                        <div class="brave-offer__description">{!! $offers->offer_1_text !!}</div>
                     </div>
                     <div class="brave-offer__bottom">
                         <div class="brave-offer__price-wrap">
-                            <span class="brave-offer__price">БЕСПЛАТНО</span>
+                            @if($offers->offer_1_discount)
+                            <div class="brave-offer__about-discount">{{ $offers->offer_1_discount }}</div>
+                            @endif
+                            @if($offers->offer_1_old_price)
+                            <span class="brave-offer__old-price">{{ $offers->offer_1_old_price }}</span>
+                            @endif
+                            <span class="brave-offer__price">{{ $offers->offer_1_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
                             <a href="#" class="brave-offer__btn button button--c-transparent"><span class="button__text">ЗАКАЗАТЬ</span></a>
@@ -507,12 +381,18 @@
                 </li>
                 <li class="join-brave__offer brave-offer brave-offer--2">
                     <div class="brave-offer__top">
-                        <div class="brave-offer__title">ПЕРВЫЙ<br>СПАРРИНГ</div>
-                        <div class="brave-offer__description">Со своим партнером или инструктором. Футболка участника в подарок.</div>
+                        <div class="brave-offer__title">{!! $offers->offer_2_title !!}</div>
+                        <div class="brave-offer__description">{!! $offers->offer_2_text !!}</div>
                     </div>
                     <div class="brave-offer__bottom">
                         <div class="brave-offer__price-wrap">
-                            <span class="brave-offer__price">8 500 ТГ</span>
+                            @if($offers->offer_2_discount)
+                                <div class="brave-offer__about-discount">{{ $offers->offer_2_discount }}</div>
+                            @endif
+                            @if($offers->offer_2_old_price)
+                                <span class="brave-offer__old-price">{{ $offers->offer_2_old_price }}</span>
+                            @endif
+                            <span class="brave-offer__price">{{ $offers->offer_2_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
                             <a href="#" class="brave-offer__btn button button--c-transparent"><span class="button__text">ЗАКАЗАТЬ</span></a>
@@ -521,14 +401,18 @@
                 </li>
                 <li class="join-brave__offer brave-offer brave-offer--3">
                     <div class="brave-offer__top">
-                        <div class="brave-offer__title">МЕСЯЧНЫЙ<br>АБОНЕМЕНТ</div>
-                        <div class="brave-offer__description">Тренировочный курс с инструктором, 8 спаррингов, фирменная футболка.</div>
+                        <div class="brave-offer__title">{!! $offers->offer_3_title !!}</div>
+                        <div class="brave-offer__description">{!! $offers->offer_3_text !!}</div>
                     </div>
                     <div class="brave-offer__bottom">
                         <div class="brave-offer__price-wrap">
-                            <div class="brave-offer__about-discount">Скидка 30% до 30 мая</div>
-                            <span class="brave-offer__old-price">35 000 ТГ</span>
-                            <span class="brave-offer__price">24 500 ТГ</span>
+                            @if($offers->offer_3_discount)
+                                <div class="brave-offer__about-discount">{{ $offers->offer_1_discount }}</div>
+                            @endif
+                            @if($offers->offer_3_old_price)
+                                <span class="brave-offer__old-price">{{ $offers->offer_3_old_price }}</span>
+                            @endif
+                            <span class="brave-offer__price">{{ $offers->offer_3_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
                             <a href="#" class="brave-offer__btn button button--c-transparent"><span class="button__text">ЗАКАЗАТЬ</span></a>

@@ -23,6 +23,17 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
 
     Route::get('/',         'AdminController@getIndex');
 
+    Route::get('/all',                      'AdminController@getAll');
+    Route::get('/about',                    'AdminController@getAbout');
+    Route::get('/atmosphere',               'AdminController@getAtmosphere');
+    Route::get('/reviews',                  'AdminController@getReviews');
+    Route::get('/habit',                    'AdminController@getHabit');
+    Route::get('/challenge',                'AdminController@getChallenge');
+    Route::get('/excuses',                  'AdminController@getExcuses');
+    Route::get('/offers',                   'AdminController@getOffers');
+    Route::get('/meta',                     'AdminController@getMeta');
+    Route::get('/post',                     'AdminController@getPost');
+    Route::get('/scripts',                  'AdminController@getScripts');
 
 
     // Таксономия проекта. Визуальная зависимость данных.

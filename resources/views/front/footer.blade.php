@@ -20,21 +20,21 @@
                     <ul class="footer__social">
                         <li class="footer__social-item">
                             <span class="icon icon-instagram"></span>
-                            <a href="#" class="link link_style_accent link_style_underline footer__social-link">Instagram</a>
+                            <a href="{{ $all_site->inst }}" class="link link_style_accent link_style_underline footer__social-link">Instagram</a>
                         </li>
                         <li class="footer__social-item">
                             <span class="icon icon-vk"></span>
-                            <a href="#" class="link link_style_accent link_style_underline footer__social-link">ВКонтакте</a>
+                            <a href="{{ $all_site->vk }}" class="link link_style_accent link_style_underline footer__social-link">ВКонтакте</a>
                         </li>
                         <li class="footer__social-item">
                             <span class="icon icon-facebook"></span>
-                            <a href="#" class="link link_style_accent link_style_underline footer__social-link">Фейсбук</a>
+                            <a href="{{ $all_site->fb }}" class="link link_style_accent link_style_underline footer__social-link">Фейсбук</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__section">
                     <span class="footer__header">Телефон и WhatsApp для справок</span>
-                    <a href="#" class="link footer__phone">+7 (727) 123-54-67</a>
+                    <a href="tel:{{ $all_site->phone }}" class="link footer__phone">{{ $all_site->phone }}</a>
                     <a href="#" class="link link_style_accent link_style_underline footer__franchise">Хотите открыть Brave в своем зале?</a>
                 </div>
             </div>
