@@ -1,0 +1,55 @@
+.opponent-search{
+  padding: 142px 50px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(-45deg, #ffffff 55px, transparent 0),
+              linear-gradient(45deg, #ffffff 55px, transparent 0),
+              linear-gradient(-135deg, #ffffff 55px, transparent 0),
+              linear-gradient(135deg, #ffffff 55px, transparent 0),
+              url("/img/opponent-search_bg.jpg") no-repeat center / cover;
+
+  &__criterions{
+    max-width: 1246px;
+    width: 100%;
+    display: flex;
+  }
+
+  &__field{
+    max-width: 230px;
+    width: 100%;
+
+    &--btn{
+      max-width: 146px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & + &{
+      margin-left: 20px;
+    }
+
+    .select2{
+      width: 100% !important;
+    }
+  }
+
+  &__btn{}
+
+  &__result{
+    margin-top: 45px;
+    font-size: @fz-4;
+    font-weight: @fw-bold;
+    line-height: 1;
+    color: @c-main-light;
+    text-align: center;
+  }
+
+  &__about-battles{
+    margin-top: 70px;
+    font-size: @fz-7;
+    line-height: @lh-for-small;
+    color: @c-main-light;
+    text-align: center;
+  }
+}

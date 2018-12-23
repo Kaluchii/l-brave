@@ -1,48 +1,32 @@
 {
   "private": true,
   "scripts": {
-    "prod": "gulp --production",
+    "prod": "gulp production",
     "dev": "gulp watch"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-
+    "browser-sync": "^2.26.0",
     "yargs": "^6.4.0",
     "change-case": "^3.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-cleancss": "^0.2.2",
     "gulp-htmllint": "0.0.11",
-    "gulp-if": "^2.0.2",
-    "browser-sync": "^2.26.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.10",
-
-
     "gulp-imagemin": "^3.1.1",
     "gulp-svgmin": "^1.2.3",
-
-    "gulp-jasmine": "^2.4.2",
-    "jasmine-reporters": "^2.2.0",
-    "gulp-notify": "^3.2.0",
-
     "gulp-autoprefixer": "^3.1.1",
     "gulp-csscomb": "^3.0.8",
     "gulp-cssmin": "^0.1.7",
-    "gulp-less": "^4.0.1",
-    "gulp-stylefmt": "^1.0.0",
+    "gulp-less": "^3.3.0",
     "stylelint": "^7.6.0",
     "gulp-uglify": "^3.0.1",
-
     "gulp-postcss": "^6.2.0",
-    "postcss-less": "^0.15.0",
     "postcss-reporter": "^2.0.0",
-    "path": "^0.12.7",
-
     "laravel-elixir": "*",
-
+    "gulp-jasmine": "^4.0.0",
     "normalize.css": "^5.0.0"
   }
 }

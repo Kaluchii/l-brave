@@ -1,0 +1,38 @@
+.mailing{
+  padding: 0 50px 125px;
+  overflow: hidden;
+
+  &__header{}
+
+  &__subscribe{
+    position: relative;
+    margin: 135px auto 0;
+    display: flex;
+    max-width: 515px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50.5%, -22%);
+      width: 759px;
+      height: 258px;
+      background: url("/img/mailing_handshake.jpg") no-repeat center / contain;
+    }
+  }
+
+  &__input-wrap{
+    width: 100%;
+    max-width: 310px;
+  }
+
+  &__input{}
+
+  &__btn-wrap{
+    margin-left: 20px;
+  }
+
+  &__btn{}
+}

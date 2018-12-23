@@ -1,0 +1,7 @@
+@media all and (max-width: 425px) {
+	.button--big-in-small {
+		width : 425px;
+		max-width : 100%;
+	}
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vYmlsZS9idXR0b24ubGVzcyIsIm1vYmlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFSTtJQUNFLGFBQUE7SUFDQSxnQkFBQTtHQ0FIO0NBQ0YiLCJmaWxlIjoibW9iaWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDQyNXB4KXtcbiAgLmJ1dHRvbntcbiAgICAmLS1iaWctaW4tc21hbGx7XG4gICAgICB3aWR0aDogNDI1cHg7XG4gICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgfVxuICB9XG59IiwiQG1lZGlhIGFsbCBhbmQgKG1heC13aWR0aDogNDI1cHgpIHtcbiAgLmJ1dHRvbi0tYmlnLWluLXNtYWxsIHtcbiAgICB3aWR0aDogNDI1cHg7XG4gICAgbWF4LXdpZHRoOiAxMDAlO1xuICB9XG59XG4iXX0= */

@@ -1,0 +1,44 @@
+.button{
+  display: flex;
+  align-items: center;
+  height: @def-input-height;
+  padding: 0 25px;
+  font-size: 18px;
+  font-weight: @fw-bold;
+  line-height: 1;
+  border: 1px solid @c-main-orange;
+  border-radius: @border-radius;
+  background-color: @c-main-orange;
+  color: @c-main-light;
+  user-select: none;
+  cursor: pointer;
+  transition: .1s;
+
+  &:hover, &:focus{
+    border-color: @c-light-orange;
+    background-color: @c-light-orange;
+  }
+
+  &--c-transparent{
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
+
+    &:hover, &:focus{
+      border-color: @c-main-orange;
+      background-color: @c-main-orange;
+    }
+  }
+
+  &.is-disabled, &:disabled{
+    background-color: #999999;
+    border-color: #656565;
+    cursor: not-allowed;
+  }
+
+  &--big-in-small{}
+
+  &__text{
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+}

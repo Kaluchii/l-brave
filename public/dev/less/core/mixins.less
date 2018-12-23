@@ -1,0 +1,29 @@
+.link(@color, @border, @hover, @border_h){
+  color: @color;
+  background: linear-gradient(to right, @border, @border 100%) repeat-x ~'0 100% / 10px 1px';
+
+  &:hover, &:focus{
+    cursor: pointer;
+    background: linear-gradient(to right, @border_h, @border_h 100%) repeat-x ~'0 100% / 10px 1px';
+    color: @hover;
+  }
+}
+
+.dotted-link(@color, @border, @hover, @border_h){
+  color: @color;
+  background: linear-gradient(to right, @border 50%, transparent 50%) repeat-x ~'0 100% / 2px 1px';
+
+  &:hover, &:focus{
+    cursor: pointer;
+    background: linear-gradient(to right, @border_h 50%, transparent 50%) repeat-x ~'0 100% / 2px 1px';
+    color: @hover;
+  }
+}
+
+.dashed-upline(@color){
+  background: linear-gradient(to right, @color 50%, transparent 50%) repeat-x ~'0 0 / 6px 1px';
+}
+
+.dashed-downline(@color){
+  background: linear-gradient(to right, @color 50%, transparent 50%) repeat-x ~'0 100% / 6px 1px';
+}

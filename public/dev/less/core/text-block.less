@@ -1,0 +1,53 @@
+.text-block{
+  font-size: 16px;
+  color: @c-main-dark;
+
+  &--big-lh{
+    line-height: 2;
+  }
+
+  h1, h2, h3, h4, h5, h6{}
+
+  p{}
+
+  ol{
+    margin-left: 18px;
+    line-height: 1.5;
+    list-style-type: decimal;
+  }
+
+  ul{
+    margin-left: 18px;
+    line-height: 1.5;
+    list-style-type: disc;
+  }
+
+  li{
+    margin: 8px 0;
+  }
+
+  a{}
+
+  strong, b{}
+}
+
+@media all and (max-width: 425px) {
+  .text-block{
+    font-size: 14px;
+
+    ol{
+      margin-left: 18px;
+      list-style-type: decimal;
+    }
+
+    ul{
+      margin-left: 18px;
+      line-height: 1.5;
+      list-style-type: disc;
+    }
+
+    li{
+      margin: 8px 0;
+    }
+  }
+}

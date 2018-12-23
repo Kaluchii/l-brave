@@ -1,0 +1,43 @@
+.first-challenge{
+  position: relative;
+  padding: 120px 140px 130px 0;
+  background: url("/img/first-challenge_logo.png") no-repeat ~'calc(50% - 15px) 70px',
+              url("/img/first-challenge_bg-light.png") no-repeat right top,
+              #1c232b;
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 588px;
+    height: 669px;
+    background: url("/img/first-challenge_muscle-hand.png") no-repeat center / contain;
+    pointer-events: none;
+  }
+
+  &__wrapper{
+    margin-left: auto;
+    max-width: 485px;
+    text-align: center;
+  }
+
+  &__title{
+    color: @c-main-light;
+  }
+
+  &__text{
+    margin-top: 35px;
+    font-size: @fz-4;
+    line-height: @lh-for-small;
+    color: #b0bec5;
+  }
+
+  &__btn-wrap{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn{}
+}

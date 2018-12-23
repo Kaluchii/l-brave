@@ -1,0 +1,29 @@
+.proverb{
+  text-align: center;
+
+  &__text{
+    font-size: @fz-3;
+    line-height: @lh-for-medium;
+    color: @c-main-dark;
+  }
+
+  &__what{
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 163px;
+    font-size: @fz-6;
+    line-height: 1;
+    color: @c-main-dark;
+
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 126px;
+      height: 126px;
+      background: url("/img/proverb_img.png") no-repeat center / contain;
+    }
+  }
+}

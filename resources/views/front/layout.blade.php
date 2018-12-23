@@ -12,16 +12,18 @@
     @yield('styles')
     {{--{!! $scripts->before_head_close_field !!}--}}
 </head>
-<body class="page page_theme_islands">
+<body>
 {{--    {!! $scripts->after_open_field !!}--}}
 
-    @include('front.header')
-    @yield('header')
+    <div class="page-wrapper">
+        @include('front.header')
+        @yield('header')
 
-    @yield('content')
+        @yield('content')
 
-    @include('front.footer')
-    @yield('footer')
+        @include('front.footer')
+        @yield('footer')
+    </div>
 
     @include('front.scripts')
     @yield('scripts')

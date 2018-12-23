@@ -1,0 +1,121 @@
+.title-block{
+  padding: 95px 50px 63px;
+  background: linear-gradient(-45deg, #ffffff 105px, transparent 0),
+              linear-gradient(45deg, #ffffff 105px, transparent 0),
+              url("/img/logo-white.png") no-repeat ~'50% calc(100% - 195px) / 181px',
+              url("/img/title-block_left-man.png") no-repeat left bottom,
+              url("/img/title-block_right-man.png") no-repeat ~'calc(100% - 74px) 100%',
+              url("/img/title-block_bg.jpg") no-repeat center / cover;
+
+  &__title-wrap{
+    font-size: 56px;
+    font-weight: @fw-bold;
+    line-height: @lh-for-medium;
+    color: @c-main-light;
+    text-align: center;
+  }
+
+  &__title{
+    display: inline;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  &__select-wrap{
+    display: inline;
+
+    .select2{
+      margin-top: -5px;
+      width: auto !important;
+    }
+
+    .select2-selection{
+      height: 60px;
+      border: 1px solid #999999;
+      border-radius: 3px;
+      background-color: transparent;
+    }
+
+    .select2-selection__rendered{
+      padding-right: 45px !important;
+      line-height: .9 !important;
+      overflow: initial !important;
+      text-overflow: initial !important;
+      color: @c-main-orange !important;
+    }
+
+    .select2-selection__arrow{
+      height: 58px !important;
+
+      b{
+        border-color: #FFFFFF transparent transparent transparent !important;
+        border-width: 13px 9px 0 !important;
+
+        margin-left: -16px !important;
+        margin-top: -4px !important;
+      }
+    }
+
+    .select2-container--open{
+      .select2-selection__arrow{
+        b{
+          border-color: transparent transparent #FFFFFF transparent !important;
+          border-width: 0 9px 13px !important;
+        }
+      }
+    }
+  }
+
+  &__select{}
+
+  &__objectives{
+    margin-top: 30px;
+    font-size: @fz-4;
+    color: #CCCCCC;
+    text-align: center;
+  }
+
+  &__objectives-item{
+    & + &{
+      &::before{
+        content: '\2022';
+        position: relative;
+        top: -3px;
+        padding: 0 12px 0 6px;
+        font-size: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__mans{
+    margin-top: 337px;
+    padding: 0 290px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mans-item{
+    line-height: @lh-for-small;
+
+    &:nth-child(2){
+      text-align: right;
+    }
+  }
+
+  &__man-name{
+    font-size: @fz-6;
+    font-weight: @fw-bold;
+    color: @c-main-orange;
+  }
+
+  &__man-occupation{
+    font-size: @fz-7;
+    color: @c-main-light;
+  }
+
+  &__man-info{
+    font-size: @fz-7;
+    color: @c-main-light;
+  }
+}
