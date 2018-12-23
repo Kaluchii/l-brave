@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
     $(".js_reviews_slick").slick({
         infinite: false,
         slidesToShow: 1,
@@ -7,6 +7,7 @@ $(document).ready(function () {
         // adaptiveHeight: true
     });
 
+    $('.select').select2();
 
 
     var accordion = $('.js_accordion');
