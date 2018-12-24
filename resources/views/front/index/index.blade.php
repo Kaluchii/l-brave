@@ -4,7 +4,7 @@
 
     <div class="main-page">
 
-        <section class="main-page__title-block title-block">
+        {{--<section class="main-page__title-block title-block">
             <div class="title-block__title-wrap">
                 <h1 class="title-block__title">Любительские<br>спарринги</h1>
                 в&nbsp;<div class="title-block__select-wrap">
@@ -33,7 +33,7 @@
                     <div class="title-block__man-info">32 года ∙ 72 кг ∙ 180 см</div>
                 </div>
             </div>
-        </section>
+        </section>--}}
 
 
         <section class="main-page__about about">
@@ -66,7 +66,7 @@
         </section>
 
 
-        <section class="main-page__atmosphere atmosphere">
+        {{--<section class="main-page__atmosphere atmosphere">
             <div class="atmosphere__header main-info main-info--white">
                 <h3 class="main-info__title title-l1">{{ $atmosphere->title }}</h3>
                 <p class="main-info__text">{!! $atmosphere->subtitle_text !!}</p>
@@ -101,8 +101,10 @@
                     <div class="media-bundles__amount-content">12 видео</div>
                 </div>
             </div>
-        </section>
+        </section>--}}
 
+
+        {{--excluded--}}
         {{--<section class="main-page__opponents opponents">
             <div class="opponents__header main-info">
                 <h2 class="main-info__title title-l1">Найдите соперника и друга</h2>
@@ -165,7 +167,7 @@
         </section>--}}
 
 
-        <section class="main-page__reviews reviews">
+        {{--<section class="main-page__reviews reviews">
             <div class="reviews__slider js_reviews_slick">
                 @foreach($reviews->reviews_list_group as $item)
                 <div class="reviews__slide">
@@ -188,7 +190,7 @@
                 </div>
                 @endforeach
             </div>
-        </section>
+        </section>--}}
 
 
         <section class="main-page__habit habit">
@@ -208,7 +210,7 @@
         </section>
 
 
-        <section class="main-page__first-challenge first-challenge">
+        {{--<section class="main-page__first-challenge first-challenge">
             <div class="first-challenge__wrapper">
                 <h3 class="first-challenge__title title-l1">{{ $challenge->title }}</h3>
                 <p class="first-challenge__text">{!! $challenge->text !!}</p>
@@ -216,9 +218,10 @@
                     <a href="#" class="first-challenge__btn button"><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
                 </div>
             </div>
-        </section>
+        </section>--}}
 
 
+        {{--excluded--}}
         {{--<section class="main-page__mailing mailing">
             <div class="mailing__header main-info">
                 <h3 class="main-info__title title-l1">Еженедельная рассылка</h3>
@@ -237,7 +240,7 @@
         </section>--}}
 
 
-        <section class="main-page__instagram instagram">
+        {{--<section class="main-page__instagram instagram">
             <h3 class="instagram__title title-l1">Наш Инстаграм</h3>
             <div class="instagram__gallery">
                 <div class="instagram__gallery-item">
@@ -312,7 +315,7 @@
                 </div>
             </div>
             <p class="instagram__subscribe-text">Подпишитесь на Brave в <a href="{{ $all_site->inst }}" class="link bold">Инстаграме</a> и будьте в курсе наших новостей</p>
-        </section>
+        </section>--}}
 
 
         <section class="main-page__what-prevents what-prevents">
@@ -340,6 +343,7 @@
         </section>
 
 
+        {{--excluded--}}
         {{--<section class="main-page__create-profile create-profile">
             <div class="create-profile__wrapper">
                 <h3 class="create-profile__title title-l3">Создайте профиль</h3>
@@ -353,7 +357,7 @@
         </section>--}}
 
 
-        <section class="main-page__join-brave join-brave">
+        {{--<section class="main-page__join-brave join-brave">
             <div class="join-brave__header main-info">
                 <h3 class="main-info__title title-l1">{{ $offers->title }}</h3>
                 <p class="main-info__text">{!! $offers->text !!}</p>
@@ -420,7 +424,7 @@
                     </div>
                 </li>
             </ul>
-        </section>
+        </section>--}}
 
     </div>
 

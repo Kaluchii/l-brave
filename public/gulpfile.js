@@ -200,14 +200,14 @@ gulp.task('watch', function () {
         serveStatic: ['../css']
     });
 
-    gulp.watch(devImg + '*.*', ['image']);
-    gulp.watch(devCss + '*.less', ['style']);
-    gulp.watch(devCss + '**/*.less', ['style']);
-    gulp.watch(devJs + '*.js', ['js']);
-    gulp.watch(devJs + 'plugins/*.js', ['vendor-js']);
-    gulp.watch(devJs + 'plugins/**/*.js', ['vendor-js']);
-    gulp.watch(html + '**/*.php', ['php']);
-    gulp.watch(html + '*.php', ['php']);
+    gulp.watch('*.*',{cwd: devImg}, ['image']);
+    gulp.watch('*.less',{cwd: devCss}, ['style']);
+    gulp.watch('**/*.less',{cwd: devCss}, ['style']);
+    gulp.watch( '*.js',{cwd: devJs}, ['js']);
+    gulp.watch('plugins/*.js',{cwd: devJs}, ['vendor-js']);
+    gulp.watch('plugins/**/*.js',{cwd: devJs}, ['vendor-js']);
+    gulp.watch('**/*.php',{cwd: html}, ['php']);
+    gulp.watch('*.php',{cwd: html}, ['php']);
 });
 //======================================================================================================================
 
