@@ -1,0 +1,38 @@
+@media all and (max-width: 1024px){
+  .accordion{
+    &__item-title{
+      font-size: @fz-4;
+    }
+  }
+}
+
+@media all and (max-width: 520px){
+  .accordion{
+    &__item{
+      &.is-open{
+        .accordion{
+          &__item-title{
+            &::after{
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    &__item-title{
+      padding-right: 55px;
+      font-size: @fz-5;
+
+      &::after{
+        right: 20px;
+        border: 7px solid transparent;
+        border-right: 10px solid #333333;
+      }
+    }
+
+    &__text{
+      font-size: @fz-7;
+    }
+  }
+}

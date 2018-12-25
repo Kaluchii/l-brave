@@ -4,7 +4,13 @@ html{
   font-family: "Play", sans-serif;
 }
 
+body{
+  background-color: #21282f;
+}
+
 .page-wrapper{
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -21,6 +27,12 @@ html{
 
 .nowrap{
   white-space: nowrap;
+}
+
+@media all and (max-width: 1280px) {
+  body{
+    background-color: #fff;
+  }
 }
 
 @media all and (max-width: 768px) {

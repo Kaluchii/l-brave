@@ -1,4 +1,21 @@
-@media all and (max-width: 1200px){
+@media all and (max-width: 1024px){
   .text-blocks{
+    p{
+      font-size: 18px;
+
+      & + p{
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 420px){
+  .text-blocks{
+    p{
+      & + p{
+        margin-top: 15px;
+      }
+    }
   }
 }

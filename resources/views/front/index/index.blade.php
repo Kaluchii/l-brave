@@ -66,7 +66,7 @@
         </section>
 
 
-        {{--<section class="main-page__atmosphere atmosphere">
+        <section class="main-page__atmosphere atmosphere">
             <div class="atmosphere__header main-info main-info--white">
                 <h3 class="main-info__title title-l1">{{ $atmosphere->title }}</h3>
                 <p class="main-info__text">{!! $atmosphere->subtitle_text !!}</p>
@@ -101,7 +101,7 @@
                     <div class="media-bundles__amount-content">12 видео</div>
                 </div>
             </div>
-        </section>--}}
+        </section>
 
 
         {{--excluded--}}
@@ -201,7 +201,7 @@
             <div class="habit__body">
                 <div class="habit__info-col">
                     <div class="habit__text-wrap text-blocks text-blocks--center">{!! $habit->text !!}</div>
-                    <p class="habit__change">Награда изменит вас навсегда</p>
+                    <p class="habit__change">Награда изменит вас&nbsp;навсегда</p>
                 </div>
                 <div class="habit__img-wrap">
                     <img src="{{$habit->img->link}}?{{$habit->img->cache_index}}" alt="{{$habit->img->alt}}" class="habit__img">
@@ -336,7 +336,7 @@
 
 
         <section class="main-page__proverb proverb">
-            <p class="proverb__text">Лучше время посадить дерево — 20 лет назад.<br>
+            <p class="proverb__text">Лучше время посадить дерево — 20&nbsp;лет&nbsp;назад.<br>
                 Второе лучшее время — сейчас.
             </p>
             <div class="proverb__what">Китайская пословица</div>

@@ -25,6 +25,8 @@
         {{--@yield('footer')--}}
     </div>
 
+    <div class="layout-bg"></div>
+
     @include('front.scripts')
     @yield('scripts')
 
