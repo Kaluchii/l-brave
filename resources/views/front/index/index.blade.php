@@ -76,29 +76,37 @@
                     <div class="media-bundles__img-wrap">
                         <img src="/img/atmosphere_gal-preview_1.png" alt="" class="media-bundles__img">
                     </div>
-                    <p class="media-bundles__name">Новый зал и&nbsp;экипировка</p>
-                    <div class="media-bundles__amount-content">12 фотографий</div>
+                    <div class="media-bundles__text-wrap">
+                        <p class="media-bundles__name">Новый зал и&nbsp;экипировка</p>
+                        <div class="media-bundles__amount-content">12 фотографий</div>
+                    </div>
                 </div>
                 <div class="media-bundles__item">
                     <div class="media-bundles__img-wrap">
                         <img src="/img/atmosphere_gal-preview_2.png" alt="" class="media-bundles__img">
                     </div>
-                    <p class="media-bundles__name">Чистые раздевалки, шкафчики и душ</p>
-                    <div class="media-bundles__amount-content">12 фотографий</div>
+                    <div class="media-bundles__text-wrap">
+                        <p class="media-bundles__name">Чистые раздевалки, шкафчики и душ</p>
+                        <div class="media-bundles__amount-content">12 фотографий</div>
+                    </div>
                 </div>
                 <div class="media-bundles__item">
                     <div class="media-bundles__img-wrap">
                         <img src="/img/atmosphere_gal-preview_3.png" alt="" class="media-bundles__img">
                     </div>
-                    <p class="media-bundles__name">Наша команда: инструктор, рефери</p>
-                    <div class="media-bundles__amount-content">12 фотографий</div>
+                    <div class="media-bundles__text-wrap">
+                        <p class="media-bundles__name">Наша команда: инструктор, рефери</p>
+                        <div class="media-bundles__amount-content">12 фотографий</div>
+                    </div>
                 </div>
                 <div class="media-bundles__item">
                     <div class="media-bundles__img-wrap">
                         <img src="/img/atmosphere_youtube.png" alt="" class="media-bundles__img">
                     </div>
-                    <p class="media-bundles__name">YouTube-канал Brave</p>
-                    <div class="media-bundles__amount-content">12 видео</div>
+                    <div class="media-bundles__text-wrap">
+                        <p class="media-bundles__name">YouTube-канал Brave</p>
+                        <div class="media-bundles__amount-content">12 видео</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -210,7 +218,7 @@
         </section>
 
 
-        {{--<section class="main-page__first-challenge first-challenge">
+        <section class="main-page__first-challenge first-challenge">
             <div class="first-challenge__wrapper">
                 <h3 class="first-challenge__title title-l1">{{ $challenge->title }}</h3>
                 <p class="first-challenge__text">{!! $challenge->text !!}</p>
@@ -218,7 +226,7 @@
                     <a href="#" class="first-challenge__btn button"><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
                 </div>
             </div>
-        </section>--}}
+        </section>
 
 
         {{--excluded--}}
