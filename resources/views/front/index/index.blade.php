@@ -4,7 +4,7 @@
 
     <div class="main-page">
 
-        {{--<section class="main-page__title-block title-block">
+        <section class="main-page__title-block title-block">
             <div class="title-block__title-wrap">
                 <h1 class="title-block__title">Любительские<br>спарринги</h1>
                 в&nbsp;<div class="title-block__select-wrap">
@@ -33,7 +33,7 @@
                     <div class="title-block__man-info">32 года ∙ 72 кг ∙ 180 см</div>
                 </div>
             </div>
-        </section>--}}
+        </section>
 
 
         <section class="main-page__about about">
@@ -248,7 +248,7 @@
         </section>--}}
 
 
-        {{--<section class="main-page__instagram instagram">
+        <section class="main-page__instagram instagram">
             <h3 class="instagram__title title-l1">Наш Инстаграм</h3>
             <div class="instagram__gallery">
                 <div class="instagram__gallery-item">
@@ -323,7 +323,7 @@
                 </div>
             </div>
             <p class="instagram__subscribe-text">Подпишитесь на Brave в <a href="{{ $all_site->inst }}" class="link bold">Инстаграме</a> и будьте в курсе наших новостей</p>
-        </section>--}}
+        </section>
 
 
         <section class="main-page__what-prevents what-prevents">
@@ -365,7 +365,7 @@
         </section>--}}
 
 
-        {{--<section class="main-page__join-brave join-brave">
+        <section class="main-page__join-brave join-brave">
             <div class="join-brave__header main-info">
                 <h3 class="main-info__title title-l1">{{ $offers->title }}</h3>
                 <p class="main-info__text">{!! $offers->text !!}</p>
@@ -419,7 +419,7 @@
                     <div class="brave-offer__bottom">
                         <div class="brave-offer__price-wrap">
                             @if($offers->offer_3_discount)
-                                <div class="brave-offer__about-discount">{{ $offers->offer_1_discount }}</div>
+                                <div class="brave-offer__about-discount">{{ $offers->offer_3_discount }}</div>
                             @endif
                             @if($offers->offer_3_old_price)
                                 <span class="brave-offer__old-price">{{ $offers->offer_3_old_price }}</span>
@@ -432,7 +432,7 @@
                     </div>
                 </li>
             </ul>
-        </section>--}}
+        </section>
 
     </div>
 
