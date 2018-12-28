@@ -16,13 +16,13 @@
 {{--    {!! $scripts->after_open_field !!}--}}
 
     <div class="page-wrapper">
-        {{--@include('front.header')--}}
-        {{--@yield('header')--}}
+        @include('front.header')
+        @yield('header')
 
         @yield('content')
 
-        {{--@include('front.footer')--}}
-        {{--@yield('footer')--}}
+        @include('front.footer')
+        @yield('footer')
     </div>
 
     <div class="layout-bg"></div>

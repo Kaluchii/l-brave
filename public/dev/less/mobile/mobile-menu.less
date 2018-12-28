@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+  .mobile-menu {
+    .header__authorization {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 30px;
+
+      .header__login {
+        padding: 0;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile-menu {
+    min-width: 100%;
+  }
+
+  .mobile-menu__link {
+    font-size: 16px;
+  }
+
+  .mobile-menu__item {
+    height: 60px;
+  }
+
+  .mobile-menu {
+    top: 60px;
+
+    &.mobile-menu_is-active_true {
+      top: 80px;
+    }
+  }
+}

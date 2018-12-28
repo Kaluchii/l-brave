@@ -28,8 +28,8 @@
                 </li>
             </ul>
             <div class="header__authorization">
-                <a href="#" class="link header__login">Вход</a>
-                <a href="#popup-booking-invite" data-effect="mfp-move-horizontal" class="link inline-popup header__registration">Регистрация</a>
+                <a href="#" class="header__login">Вход</a>
+                <a href="#popup-booking-invite" data-effect="mfp-move-horizontal" class="button button--small inline-popup header__registration"><span class="button__text">Регистрация</span></a>
             </div>
             <div class="header__mobile">
                 <button class="header__hamburger">

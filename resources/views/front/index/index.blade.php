@@ -7,14 +7,14 @@
         <section class="main-page__title-block title-block">
             <div class="title-block__title-wrap">
                 <h1 class="title-block__title">Любительские<br>спарринги</h1>
-                в&nbsp;<div class="title-block__select-wrap">
+                в&nbsp;Алматы{{--<div class="title-block__select-wrap">
                     <select name="in-city" id="in-city" class="title-block__select select">
                         <option value="">Талдыкоргане</option>
                         <option value="">Алматы</option>
                         <option value="">Туркестане</option>
                         <option value="">Очень длинное название</option>
                     </select>
-                </div>
+                </div>--}}
             </div>
             <div class="title-block__objectives">
                 <span class="title-block__objectives-item">Спарринги</span>
