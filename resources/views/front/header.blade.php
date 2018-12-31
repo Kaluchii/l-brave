@@ -9,27 +9,30 @@
             </ul>
             <ul class="header__nav">
                 <li class="header__item header__item_active_yes">
-                    <a href="#" class="header__link">О клубе</a>
+                    <a href="#about" class="header__link js_goto_anchor">О клубе</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Вызовы</a>
+                    <a href="#atmosphere" class="header__link js_goto_anchor">Галерея</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Спарринги</a>
+                    <a href="#reviews" class="header__link js_goto_anchor">Отзывы</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Рейтинг</a>
+                    <a href="#habit" class="header__link js_goto_anchor">Мотивация</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Принципы</a>
+                    <a href="#instagram" class="header__link js_goto_anchor">Инстаграм</a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">Услуги и цены</a>
+                    <a href="#what-prevents" class="header__link js_goto_anchor">Причины</a>
+                </li>
+                <li class="header__item">
+                    <a href="#join-brave" class="header__link js_goto_anchor">Услуги и цены</a>
                 </li>
             </ul>
             <div class="header__authorization">
-                <a href="#" class="header__login">Вход</a>
-                <a href="#popup-booking-invite" data-effect="mfp-move-horizontal" class="button button--small inline-popup header__registration"><span class="button__text">Регистрация</span></a>
+                {{--<a href="#" class="header__login">Вход</a>
+                <a href="#popup-booking-invite" data-effect="mfp-move-horizontal" class="button button--small inline-popup header__registration"><span class="button__text">Регистрация</span></a>--}}
             </div>
             <div class="header__mobile">
                 <button class="header__hamburger">
@@ -39,19 +42,25 @@
                 </button>
                 <ul class="mobile-menu">
                     <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">О клубе</a>
+                        <a href="#about" class="mobile-menu__link js_goto_anchor">О клубе</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Вызовы</a>
-                    </li>
-                    <li class="mobile-menu__item mobile-menu__item_is-active_true">
-                        <a href="#" class="mobile-menu__link">Спарринги</a>
+                        <a href="#atmosphere" class="mobile-menu__link js_goto_anchor">Галерея</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Рейтинг</a>
+                        <a href="#reviews" class="mobile-menu__link js_goto_anchor">Отзывы</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Принципы</a>
+                        <a href="#habit" class="mobile-menu__link js_goto_anchor">Мотивация</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#instagram" class="mobile-menu__link js_goto_anchor">Инстаграм</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#what-prevents" class="mobile-menu__link js_goto_anchor">Причины</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#join-brave" class="mobile-menu__link js_goto_anchor">Услуги и цены</a>
                     </li>
                 </ul>
             </div>

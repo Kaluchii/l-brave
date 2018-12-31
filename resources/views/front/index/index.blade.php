@@ -36,7 +36,7 @@
         </section>
 
 
-        <section class="main-page__about about">
+        <section class="main-page__about about" id="about">
             <div class="about__header main-info">
                 <h2 class="main-info__title title-l1">{{ $about->title }}</h2>
                 <p class="main-info__text">{!! $about->subtitle_text !!}</p>
@@ -68,7 +68,7 @@
 
         <section class="main-page__atmosphere atmosphere">
             <div class="atmosphere__header main-info main-info--white">
-                <h3 class="main-info__title title-l1">{{ $atmosphere->title }}</h3>
+                <h3 class="main-info__title title-l1" id="atmosphere">{{ $atmosphere->title }}</h3>
                 <p class="main-info__text">{!! $atmosphere->subtitle_text !!}</p>
             </div>
             <div class="atmosphere__media-bundles-list media-bundles">
@@ -175,7 +175,7 @@
         </section>--}}
 
 
-        {{--<section class="main-page__reviews reviews">
+        {{--<section class="main-page__reviews reviews" id="reviews">
             <div class="reviews__slider js_reviews_slick">
                 @foreach($reviews->reviews_list_group as $item)
                 <div class="reviews__slide">
@@ -201,7 +201,7 @@
         </section>--}}
 
 
-        <section class="main-page__habit habit">
+        <section class="main-page__habit habit" id="habit">
             <div class="habit__header main-info">
                 <h3 class="main-info__title title-l1">{{ $habit->title }}</h3>
                 <p class="main-info__text">{!! $habit->subtitle_text !!}</p>
@@ -248,7 +248,7 @@
         </section>--}}
 
 
-        <section class="main-page__instagram instagram">
+        <section class="main-page__instagram instagram" id="instagram">
             <h3 class="instagram__title title-l1">Наш Инстаграм</h3>
             <div class="instagram__gallery">
                 <div class="instagram__gallery-item">
@@ -326,7 +326,7 @@
         </section>
 
 
-        <section class="main-page__what-prevents what-prevents">
+        <section class="main-page__what-prevents what-prevents" id="what-prevents">
             <h3 class="what-prevents__title title-l1">Что мешает начать?</h3>
             <ul class="what-prevents__causes accordion js_accordion">
                 @foreach($excuses->excuses_list_group as $item)
@@ -365,7 +365,7 @@
         </section>--}}
 
 
-        <section class="main-page__join-brave join-brave">
+        <section class="main-page__join-brave join-brave" id="join-brave">
             <div class="join-brave__header main-info">
                 <h3 class="main-info__title title-l1">{{ $offers->title }}</h3>
                 <p class="main-info__text">{!! $offers->text !!}</p>
