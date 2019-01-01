@@ -14,6 +14,8 @@ class AdminController extends Controller
         $this->extract = $ext;
         $this->extract->tuneSelection('reviews_list')->sortBy('sorter','DESC');
         $this->extract->tuneSelection('excuses_list')->sortBy('sorter','DESC');
+        $this->extract->tuneSelection('posts_list')->sortBy('sorter','DESC');
+        $this->extract->tuneSelection('gallery_slides')->sortBy('sorter','DESC');
     }
 
     public function getIndex(){
@@ -41,6 +43,14 @@ class AdminController extends Controller
         $block = $this->extract->getBlock('atmosphere');
         return view('back.blocks.atmosphere', [
             'block' => $block
+        ]);
+    }
+
+
+    public function getGalleriesItem( $id ){
+        $item = $this->extract->getGroupItem('galleries', $id);
+        return view('back.groups.galleries.galleries', [
+            'item' => $item
         ]);
     }
 
@@ -80,6 +90,14 @@ class AdminController extends Controller
     public function getExcuses(){
         $block = $this->extract->getBlock('excuses');
         return view('back.blocks.excuses', [
+            'block' => $block
+        ]);
+    }
+
+
+    public function getInstagram(){
+        $block = $this->extract->getBlock('instagram');
+        return view('back.blocks.instagram', [
             'block' => $block
         ]);
     }

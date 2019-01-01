@@ -14,4 +14,12 @@ return [
         'resizes' => ['preview']
     ],
 
+    'galleries.img' => [
+        'resizes' => ['preview']
+    ],
+
+    'gallery_slides.img' => [
+        'resizes' => ['preview']
+    ],
+
 ];

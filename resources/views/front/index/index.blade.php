@@ -72,42 +72,39 @@
                 <p class="main-info__text">{!! $atmosphere->subtitle_text !!}</p>
             </div>
             <div class="atmosphere__media-bundles-list media-bundles">
-                <div class="media-bundles__item">
+                <script>
+                    var galleries = [];
+                </script>
+                @foreach($atmosphere->galleries_group as $item)
+                <div class="media-bundles__item js_open_gallery" data-gallery-id="{{ $item->id }}">
                     <div class="media-bundles__img-wrap">
-                        <img src="/img/atmosphere_gal-preview_1.png" alt="" class="media-bundles__img">
+                        <img src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->img->alt}}" class="media-bundles__img">
                     </div>
                     <div class="media-bundles__text-wrap">
-                        <p class="media-bundles__name">Новый зал и&nbsp;экипировка</p>
-                        <div class="media-bundles__amount-content">12 фотографий</div>
+                        <p class="media-bundles__name">{{ $item->gallery_name }}</p>
+                        <div class="media-bundles__amount-content">{{ $item->explanation }}</div>
                     </div>
+                    <script>
+                        galleries['{{ $item->id }}'] = [
+                            @foreach($item->gallery_slides_group as $slide_item)
+                            {
+                                src: "{{ $slide_item->img->link }}?{{ $slide_item->img->cache_index }}",
+                                title: "{{$slide_item->img->alt}}"
+                            },
+                            @endforeach
+                        ];
+                    </script>
                 </div>
-                <div class="media-bundles__item">
+                @endforeach
+                <a href="{{ $atmosphere->channel_link }}" target="_blank" class="media-bundles__item">
                     <div class="media-bundles__img-wrap">
-                        <img src="/img/atmosphere_gal-preview_2.png" alt="" class="media-bundles__img">
+                        <img src="/img/atmosphere_youtube.png" alt="YouTube-канал Brave" class="media-bundles__img">
                     </div>
                     <div class="media-bundles__text-wrap">
-                        <p class="media-bundles__name">Чистые раздевалки, шкафчики и душ</p>
-                        <div class="media-bundles__amount-content">12 фотографий</div>
+                        <p class="media-bundles__name">{{ $atmosphere->channel_name }}</p>
+                        <div class="media-bundles__amount-content">{{ $atmosphere->explanation }}</div>
                     </div>
-                </div>
-                <div class="media-bundles__item">
-                    <div class="media-bundles__img-wrap">
-                        <img src="/img/atmosphere_gal-preview_3.png" alt="" class="media-bundles__img">
-                    </div>
-                    <div class="media-bundles__text-wrap">
-                        <p class="media-bundles__name">Наша команда: инструктор, рефери</p>
-                        <div class="media-bundles__amount-content">12 фотографий</div>
-                    </div>
-                </div>
-                <div class="media-bundles__item">
-                    <div class="media-bundles__img-wrap">
-                        <img src="/img/atmosphere_youtube.png" alt="" class="media-bundles__img">
-                    </div>
-                    <div class="media-bundles__text-wrap">
-                        <p class="media-bundles__name">YouTube-канал Brave</p>
-                        <div class="media-bundles__amount-content">12 видео</div>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -175,7 +172,7 @@
         </section>--}}
 
 
-        {{--<section class="main-page__reviews reviews" id="reviews">
+        <section class="main-page__reviews reviews" id="reviews">
             <div class="reviews__slider js_reviews_slick">
                 @foreach($reviews->reviews_list_group as $item)
                 <div class="reviews__slide">
@@ -198,7 +195,7 @@
                 </div>
                 @endforeach
             </div>
-        </section>--}}
+        </section>
 
 
         <section class="main-page__habit habit" id="habit">
@@ -251,76 +248,15 @@
         <section class="main-page__instagram instagram" id="instagram">
             <h3 class="instagram__title title-l1">Наш Инстаграм</h3>
             <div class="instagram__gallery">
+                @foreach($instagram->posts_list_group as $item)
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
+                        <a href="{{ $item->post_link }}" target="_blank" class="instagram__img-wrap">
                             <img src="/img/placeholder.jpg" alt="" class="instagram__img">
                         </a>
                     </div>
                 </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/instagram-image.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="instagram__gallery-item">
-                    <div class="instagram__gallery-item-container">
-                        <a href="#" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
-                        </a>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <p class="instagram__subscribe-text">Подпишитесь на Brave в <a href="{{ $all_site->inst }}" class="link bold">Инстаграме</a> и будьте в курсе наших новостей</p>
         </section>

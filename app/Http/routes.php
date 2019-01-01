@@ -26,9 +26,11 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/all',                      'AdminController@getAll');
     Route::get('/about',                    'AdminController@getAbout');
     Route::get('/atmosphere',               'AdminController@getAtmosphere');
+    Route::get('/atmosphere/{id}',          'AdminController@getGalleriesItem');
     Route::get('/reviews',                  'AdminController@getReviews');
     Route::get('/habit',                    'AdminController@getHabit');
     Route::get('/challenge',                'AdminController@getChallenge');
+    Route::get('/instagram',                'AdminController@getInstagram');
     Route::get('/excuses',                  'AdminController@getExcuses');
     Route::get('/offers',                   'AdminController@getOffers');
     Route::get('/meta',                     'AdminController@getMeta');

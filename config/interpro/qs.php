@@ -17,12 +17,17 @@ return [
 
     'atmosphere' => [
         'text' => ['subtitle_text'],
-        /*'groups' => [
+        'string' => ['channel_name', 'explanation', 'channel_link'],
+        'groups' => [
             'galleries' => [
                 'string' => ['gallery_name', 'explanation'],
                 'image' => ['img']
-            ]
-        ]*/
+            ],
+            'gallery_slides' => [
+                'image' => ['img'],
+                'galleries' => ['superior']
+            ],
+        ]
     ],
 
     'reviews' => [
@@ -49,6 +54,14 @@ return [
             'excuses_list' => [
                 'string' => ['excuses_title'],
                 'text' => ['text']
+            ]
+        ]
+    ],
+
+    'instagram' => [
+        'groups' => [
+            'posts_list' => [
+                'string' => ['post_link']
             ]
         ]
     ],

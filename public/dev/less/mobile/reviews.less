@@ -1,4 +1,184 @@
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1024px) {
   .reviews{
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__person-info{
+      max-width: 430px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 100px;
+
+      &::after{
+        border: 215px solid transparent;
+        border-bottom: 60px solid #FFFFFF;
+      }
+    }
+
+    &__person-name{
+      font-size: @fz-3;
+    }
+
+    &__person-occupation{
+      font-size: @fz-7;
+    }
+
+    &__person-about-me-wrap{
+      margin-top: 25px;
+      font-size: @fz-6;
+    }
+
+    &__objectives-wrap{
+      margin-top: 25px;
+    }
+
+    &__objectives-title{
+      font-size: @fz-5;
+    }
+
+    &__objectives{
+      font-size: @fz-6;
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .reviews{
+    &__slide-container{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__person-img-wrap{
+      position: static;
+      width: auto;
+      max-width: 540px;
+    }
+
+    &__person-info{
+      width: 560px;
+      max-width: 100%;
+
+      &::after{
+        border: 280px solid transparent;
+        border-bottom: 60px solid #FFFFFF;
+      }
+    }
+
+    .slick-dots{
+      bottom: -30px;
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .reviews{
+    &__person-info{
+      width: 420px;
+
+      &::after{
+        border: 210px solid transparent;
+        border-bottom: 50px solid #FFFFFF;
+      }
+    }
+
+    &__person-about-me{
+      &::before, &::after{
+        top: 5px;
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 620px) {
+  .reviews{
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__slide-container{
+      border: 2px solid #FFFFFF;
+    }
+  }
+}
+
+@media all and (max-width: 520px) {
+  .reviews{
+    &__person-info{
+      padding: 35px 15px 90px;
+    }
+
+    &__person-name{
+      font-size: @fz-4;
+    }
+
+    &__person-occupation{
+      margin-top: 7px;
+      font-size: @fz-8;
+    }
+
+    &__person-about-me-wrap{
+      margin-top: 20px;
+      font-size: @fz-7;
+    }
+
+    &__objectives-wrap{
+      margin-top: 20px;
+    }
+
+    &__objectives-title{
+      font-size: @fz-6;
+    }
+
+    &__objectives{
+      font-size: @fz-7;
+    }
+  }
+}
+
+@media all and (max-width: 464px) {
+  .reviews{
+    &__person-info{
+      width: 340px;
+
+      &::after{
+        border: 170px solid transparent;
+        border-bottom: 50px solid #FFFFFF;
+      }
+    }
+
+    &__person-about-me{
+      &::before, &::after{
+        top: 3px;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 384px) {
+  .reviews{
+    &__person-info{
+      width: 276px;
+      padding-top: 25px;
+      padding-bottom: 70px;
+
+      &::after{
+        border: 138px solid transparent;
+        border-bottom: 40px solid #FFFFFF;
+      }
+    }
+
+    &__person-about-me-wrap{
+      margin-top: 15px;
+    }
+
+    &__objectives-wrap{
+      margin-top: 15px;
+    }
+
+    .slick-dots{
+      bottom: -20px;
+    }
   }
 }

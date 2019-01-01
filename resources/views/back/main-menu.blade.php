@@ -33,6 +33,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/instagram">
+                    <i class="fa fa-circle-o"></i> <span>Инстаграм</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/excuses">
                     <i class="fa fa-circle-o"></i> <span>Что мешает</span>
                 </a>

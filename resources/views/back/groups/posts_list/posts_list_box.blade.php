@@ -1,48 +1,22 @@
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Отзыв {{$item->sorter_field}}</h3>
+        <h3 class="box-title">Пост {{$item->sorter_field}}</h3>
         <button type="submit" class="btn btn-primary pull-right remove-flat-item" data-id="{{$item->id_field}}"
-                data-block="reviews_list">Удалить</button>
+                data-block="posts_list">Удалить</button>
     </div>
 
     <div class="box-body">
         <div class="form-group">
-            <label>Имя</label>
+            <label>Ссылка на пост</label>
             <input class="form-control string"
                    type="text" placeholder=""
-                   value="{{$item->person_name}}"
-                   data-name="person_name"
+                   value="{{$item->post_link}}"
+                   data-name="post_link"
                    data-type="string"
-                   data-block="reviews_list"
+                   data-block="posts_list"
                    data-id="{{$item->id_field}}">
         </div>
-        <div class="form-group">
-            <label>О пользователе</label>
-            <input class="form-control string"
-                   type="text" placeholder=""
-                   value="{{$item->person_occupation}}"
-                   data-name="person_occupation"
-                   data-type="string"
-                   data-block="reviews_list"
-                   data-id="{{$item->id_field}}">
-        </div>
-        <div class="form-group">
-            <label>Текст</label>
-            <textarea class="form-control text" data-reg="true"
-                      data-name="text"
-                      data-type="text"
-                      data-block="reviews_list"
-                      data-id="{{$item->id_field}}">{{$item->text_field}}</textarea>
-        </div>
-        <div class="form-group">
-            <label>Цели за месяц</label>
-            <textarea class="form-control text" data-reg="true"
-                      data-name="objectives"
-                      data-type="text"
-                      data-block="reviews_list"
-                      data-id="{{$item->id_field}}">{{$item->objectives}}</textarea>
-        </div>
-        <div class="form-group">
+        {{--<div class="form-group">
             <label>Фото (~810x700 пикселей)</label>
             <div class="dropzone">
                 <div class="file-input">
@@ -55,7 +29,7 @@
                                 </div>
                                 <div class="file-thumbnail-footer">
                                     <div class="file-actions">
-                                        <input type="text" class="form-control alt-text" data-block="reviews_list"
+                                        <input type="text" class="form-control alt-text" data-block="posts_list"
                                                data-type="images" data-id="{{$item->id_field}}" data-name="alt"
                                                value="{{$item->img_field->alt}}">
                                         <div class="clearfix"></div>
@@ -74,7 +48,7 @@
                                 <i class="glyphicon glyphicon-folder-open"></i>&nbsp;
                                 <span class="hidden-xs">Выбрать изображение …</span>
                                 <input type="file" class="form-control file"
-                                       data-block="reviews_list"
+                                       data-block="posts_list"
                                        data-name="img"
                                        data-type="image"
                                        data-id="{{$item->id_field}}">
@@ -83,13 +57,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
         <div class="col-xs-1 no-padding">
             <div class="form-group">
                 <label>Позиция</label>
                 <input type="number" class="form-control string"
                        data-id="{{$item->id_field}}"
-                       data-block="reviews_list"
+                       data-block="posts_list"
                        data-name="sorter"
                        value="{{$item->sorter_field}}">
             </div>

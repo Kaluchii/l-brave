@@ -27,6 +27,9 @@ class FrontController extends Controller
     public function getIndex(){
         $this->extract->tuneSelection('reviews_list')->sortBy('sorter','ASC');
         $this->extract->tuneSelection('excuses_list')->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('posts_list')->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('galleries')->sortBy('sorter','ASC');
+        $this->extract->tuneSelection('gallery_slides')->sortBy('sorter','ASC');
 
         $all_site = $this->extract->getBlock('all_site');
         $about = $this->extract->getBlock('about');
@@ -34,6 +37,7 @@ class FrontController extends Controller
         $reviews = $this->extract->getBlock('reviews');
         $habit = $this->extract->getBlock('habit');
         $challenge = $this->extract->getBlock('challenge');
+        $instagram = $this->extract->getBlock('instagram');
         $excuses = $this->extract->getBlock('excuses');
         $offers = $this->extract->getBlock('offers');
         return view('front.index.index', [
@@ -43,6 +47,7 @@ class FrontController extends Controller
             'reviews' => $reviews,
             'habit' => $habit,
             'challenge' => $challenge,
+            'instagram' => $instagram,
             'excuses' => $excuses,
             'offers' => $offers,
         ]);
