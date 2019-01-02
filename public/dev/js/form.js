@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.thank').magnificPopup({
+    $('.js_thank_link').magnificPopup({
         type: 'inline',
         removalDelay: 500,
         callbacks: {

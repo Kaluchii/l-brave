@@ -1,4 +1,5 @@
-<h4>Письмо с сайта Brave</h4><br>
-<p>Имя: {{$client_name}}<br>
-Эл. почта: {{$email}}<br>
-Вопрос: {{$phone}}</p>
+<h3>Brave</h3>
+<h4>Письмо</h4>
+<p>Имя: {{$client_name}}</p>
+<p>Эл. почта: {{$email}}</p>
+<p>Телефон: {{$phone}}</p>
