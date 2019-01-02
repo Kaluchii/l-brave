@@ -28,6 +28,19 @@ $(function () {
     });
 
 
+    //==== Форма "Заказать звонок"
+    $('.js_call_back').magnificPopup({
+        type: 'inline',
+        removalDelay: 300,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-in';
+            }
+        },
+        midClick: true
+    });
+
+
     $('.js_open_gallery').on('click', function () {
         currentGallery = galleries[$(this).data('galleryId')];
 
@@ -35,7 +48,7 @@ $(function () {
             type: 'image',
             items: currentGallery,
             tLoading: 'Загружается изображение #%curr%...',
-            closeBtnInside: true,
+            closeBtnInside: false,
             removalDelay: 300,
             gallery: {
                 enabled: true,
@@ -54,6 +67,7 @@ $(function () {
                     // just a hack that adds mfp-anim class to markup
                     this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
                     this.st.gallery.arrowMarkup = this.st.gallery.arrowMarkup.replace('mfp-arrow', 'mfp-arrow mfp-with-anim');
+                    this.st.closeMarkup = this.st.closeMarkup.replace('mfp-close', 'mfp-close mfp-with-anim');
                     this.st.mainClass = 'mfp-zoom-in';
                 }
             }

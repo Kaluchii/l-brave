@@ -27,6 +27,12 @@
 
     <div class="layout-bg"></div>
 
+    <div class="hide">
+        @include('front.popups.call_back_form')
+        @include('front.popups.thank')
+        <a href="#thanks" class="js_thank_link"></a>
+    </div>
+
     @include('front.scripts')
     @yield('scripts')
 

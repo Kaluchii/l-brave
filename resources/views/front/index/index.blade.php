@@ -54,7 +54,7 @@
                         </p>
                         <div class="free-exercise__btn-with-text">
                             <div class="free-exercise__btn-wrap">
-                                <a href="#" class="free-exercise__btn button"><span class="button__text">ЗАПИСАТЬСЯ</span></a>
+                                <a href="#call_back_form" class="free-exercise__btn button js_call_back"><span class="button__text">ЗАПИСАТЬСЯ</span></a>
                             </div>
                             <p class="free-exercise__text-near-button">Тренировка по физподготовке
                                 и&nbsp;основам самозащиты
@@ -220,7 +220,7 @@
                 <h3 class="first-challenge__title title-l1">{{ $challenge->title }}</h3>
                 <p class="first-challenge__text">{!! $challenge->text !!}</p>
                 <div class="first-challenge__btn-wrap">
-                    <a href="#" class="first-challenge__btn button"><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
+                    <a href="#call_back_form" class="first-challenge__btn button js_call_back"><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
                 </div>
             </div>
         </section>

@@ -1,0 +1,52 @@
+@media all and (max-width: 610px) {
+  .popup {
+    .mfp-close{
+      top: -71px;
+      right: 0;
+      width: auto;
+      height: auto;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      line-height: 1;
+    }
+  }
+}
+
+@media all and (max-width: 570px) {
+  .popup {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__top-cover, &__bottom-cover{
+      height: 30px;
+      background: linear-gradient(to right, transparent 0%, transparent 30px, #FFFFFF 30px,
+                  #FFFFFF ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
+
+      &::before, &::after{
+        border: 15px solid #FFFFFF;
+        border-top: 15px solid transparent;
+        border-left: 15px solid transparent;
+      }
+    }
+
+    .mfp-close{
+      top: -45px;
+      right: -5px;
+    }
+  }
+}
+
+@media all and (max-width: 520px) {
+  .popup{
+    padding-bottom: 15px;
+
+    &__title{
+      font-size: @fz-3;
+    }
+
+    &__form{
+      margin-top: 25px;
+      max-width: 300px;
+    }
+  }
+}

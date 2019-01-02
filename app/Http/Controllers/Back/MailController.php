@@ -4,17 +4,17 @@ namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesResources;
-use Illuminate\Support\Facades\Log;
-use Interpro\Core\Contracts\Taxonomy\Taxonomy;
-use Interpro\Entrance\Contracts\Extract\ExtractAgent;
-use Interpro\Extractor\Contracts\Selection\Tuner;
+//use Illuminate\Foundation\Bus\DispatchesJobs;
+//use Illuminate\Routing\Controller as BaseController;
+//use Illuminate\Foundation\Validation\ValidatesRequests;
+//use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+//use Illuminate\Foundation\Auth\Access\AuthorizesResources;
+//use Illuminate\Support\Facades\Log;
+//use Interpro\Core\Contracts\Taxonomy\Taxonomy;
+//use Interpro\Entrance\Contracts\Extract\ExtractAgent;
+//use Interpro\Extractor\Contracts\Selection\Tuner;
 use Interpro\Feedback\Contracts\FeedbackAgent;
-use ReCaptcha\ReCaptcha;
+//use ReCaptcha\ReCaptcha;
 
 
 class MailController extends Controller
@@ -25,7 +25,7 @@ class MailController extends Controller
         $this->feedback = $feedback;
         // Объявляем все шаблоны писем для форм
 
-        $this->feedback->setBodyTemplate('sponsor_form', 'back/mail/sponsor_form_mail');
+        $this->feedback->setBodyTemplate('call_back_form', 'back/mail/call_back_form_mail');
 
     }
 

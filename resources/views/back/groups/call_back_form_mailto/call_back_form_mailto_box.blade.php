@@ -2,7 +2,7 @@
     <div class="box-header with-border">
         <h3 class="box-title">Получатель</h3>
         <button type="submit" class="btn btn-primary pull-right remove-flat-item" data-id="{{$item->id_field}}"
-                data-block="call_mailto">Удалить</button>
+                data-block="call_back_form_mailto">Удалить</button>
     </div>
     <div class="box-body">
 
@@ -13,7 +13,7 @@
                    value="{{$item->to_field}}"
                    data-name="to"
                    data-type="string"
-                   data-block="call_mailto"
+                   data-block="call_back_form_mailto"
                    data-id="{{$item->id_field}}">
         </div>
 

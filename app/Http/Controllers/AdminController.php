@@ -128,7 +128,7 @@ class AdminController extends Controller
 
 
     public function getPost(){
-        $block = $this->extract->getBlock('call');
+        $block = $this->extract->getBlock('call_back_form');
         return view('back.blocks.mails', [
             'block' => $block
         ]);

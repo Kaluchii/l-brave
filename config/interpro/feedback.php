@@ -27,7 +27,7 @@ return [
     'forms' => [
         //Блоки форм
         //предопределенные поля: from, subject, host, port, encryption, password, to
-        'call' => [
+        'call_back_form' => [
             //доп. поля интерфейса и настройки формы в формате qs конфига
             //form1_mailto - подгруппа с одним полем mailto
 
@@ -35,7 +35,7 @@ return [
                 //Каждой форме добавляется подгруппа с именем имяформы_mails, здесь настраивать поля для этой подгруппы
                 //from, subject, host, port, encryption, to, username, email, body, mailed  -  по умолчанию +
                 //доп. поля формы в формате qs конфига - для значений полей от пользователя сайта
-                'string' => ['client_name', 'phone']
+                'string' => ['client_name', 'phone', 'email']
             ]
         ],
     ]
