@@ -2,7 +2,8 @@
     <footer class="footer">
         <div class="footer__lead-wrap">
             <p class="footer__lead">
-                <a href="#" class="link link_style_accent link_style_underline footer__lead-link">Пригласите друга</a> и получите скидку 20% на два абонемента.
+                {{--<a href="#" class="link link_style_accent link_style_underline footer__lead-link">Пригласите друга</a> и получите скидку 20% на два абонемента.--}}
+                Пригласите друга и получите скидку 20% на два абонемента.
             </p>
         </div>
         <div class="container">
@@ -33,9 +34,10 @@
                     </ul>
                 </div>
                 <div class="footer__section">
-                    <span class="footer__header">Телефон и WhatsApp для справок</span>
+                    <span class="footer__header">Телефон и WhatsApp для справок&nbsp;и&nbsp;записи</span>
                     <a href="tel:{{ $all_site->phone }}" class="footer__phone">{{ $all_site->phone }}</a>
-                    <a href="#" class="link link_style_accent link_style_underline footer__franchise">Хотите открыть Brave в своем зале?</a>
+                    {{--<a href="#" class="link link_style_accent link_style_underline footer__franchise">Хотите открыть Brave в своем зале?</a>--}}
+                    <span class="footer__franchise">Хотите открыть Brave в своем зале?</span>
                 </div>
             </div>
         </div>

@@ -16,8 +16,8 @@
                    data-block="posts_list"
                    data-id="{{$item->id_field}}">
         </div>
-        {{--<div class="form-group">
-            <label>Фото (~810x700 пикселей)</label>
+        <div class="form-group">
+            <label>Фото</label>
             <div class="dropzone">
                 <div class="file-input">
                     <div class="file-preview">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-        </div>--}}
+        </div>
         <div class="col-xs-1 no-padding">
             <div class="form-group">
                 <label>Позиция</label>

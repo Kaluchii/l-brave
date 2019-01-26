@@ -18,6 +18,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/signing-up">
+                    <i class="fa fa-circle-o"></i> <span>Запись</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/reviews">
                     <i class="fa fa-circle-o"></i> <span>Отзывы</span>
                 </a>

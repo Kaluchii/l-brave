@@ -100,24 +100,18 @@
     }
 
     &__objectives{
-      max-width: 240px;
+      max-width: 260px;
       margin-left: auto;
       margin-right: auto;
       font-size: @fz-6;
     }
 
     &__objectives-item{
-      & + &{
-        &::before{
-          top: -1px;
-          padding: 0 12px 0 8px;
-        }
-      }
+      margin-left: 8px;
+      margin-right: 8px;
 
-      &:nth-child(3){
-        &::before{
-          display: none;
-        }
+      &::before{
+        display: none;
       }
     }
   }

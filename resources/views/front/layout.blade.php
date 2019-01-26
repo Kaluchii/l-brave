@@ -29,6 +29,7 @@
 
     <div class="hide">
         @include('front.popups.call_back_form')
+        @include('front.popups.offer_form')
         @include('front.popups.thank')
         <a href="#thanks" class="js_thank_link"></a>
     </div>

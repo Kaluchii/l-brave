@@ -28,7 +28,7 @@ $(function () {
     });
 
 
-    //==== Форма "Заказать звонок"
+    //==== Форма "Записаться"
     $('.js_call_back').magnificPopup({
         type: 'inline',
         removalDelay: 300,
@@ -38,6 +38,21 @@ $(function () {
             }
         },
         midClick: true
+    });
+
+
+    //==== Форма "Вступление"
+    $('.js_offer').magnificPopup({
+        type: 'inline',
+        removalDelay: 300,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-in';
+            }
+        },
+        midClick: true
+    }).on('click', function () {
+        $('.js_offer_name').val($(this).data('offerName'));
     });
 
 

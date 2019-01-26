@@ -109,6 +109,17 @@
         </section>
 
 
+        <section class="main-page__create-profile create-profile">
+            <div class="create-profile__wrapper">
+                <h3 class="create-profile__title title-l3">{{ $signing->title }}</h3>
+                <p class="create-profile__text">{!! $signing->text !!}</p>
+                <div class="create-profile__btn-wrap">
+                    <a href="#call_back_form" class="create-profile__btn button js_call_back"><span class="button__text">ЗАПИСАТЬСЯ</span></a>
+                </div>
+            </div>
+        </section>
+
+
         {{--excluded--}}
         {{--<section class="main-page__opponents opponents">
             <div class="opponents__header main-info">
@@ -172,7 +183,10 @@
         </section>--}}
 
 
-        <section class="main-page__reviews reviews" id="reviews">
+        <section class="main-page__reviews reviews">
+            <div class="reviews__header main-info">
+                <h3 class="main-info__title title-l1" id="appeal">{{ $reviews->title }}</h3>
+            </div>
             <div class="reviews__slider js_reviews_slick">
                 @foreach($reviews->reviews_list_group as $item)
                 <div class="reviews__slide">
@@ -252,7 +266,7 @@
                 <div class="instagram__gallery-item">
                     <div class="instagram__gallery-item-container">
                         <a href="{{ $item->post_link }}" target="_blank" class="instagram__img-wrap">
-                            <img src="/img/placeholder.jpg" alt="" class="instagram__img">
+                            <img src="{{$item->img->link}}?{{$item->img->cache_index}}" alt="{{$item->img->alt}}" class="instagram__img">
                         </a>
                     </div>
                 </div>
@@ -287,20 +301,6 @@
         </section>
 
 
-        {{--excluded--}}
-        {{--<section class="main-page__create-profile create-profile">
-            <div class="create-profile__wrapper">
-                <h3 class="create-profile__title title-l3">Создайте профиль</h3>
-                <p class="create-profile__text">Вы сможете пригласить на спарринг друга или участника Brave,
-                    принимать вызовы и получать рейтинг.
-                </p>
-                <div class="create-profile__btn-wrap">
-                    <a href="#" class="create-profile__btn button"><span class="button__text">СОЗДАТЬ</span></a>
-                </div>
-            </div>
-        </section>--}}
-
-
         <section class="main-page__join-brave join-brave" id="join-brave">
             <div class="join-brave__header main-info">
                 <h3 class="main-info__title title-l1">{{ $offers->title }}</h3>
@@ -323,7 +323,7 @@
                             <span class="brave-offer__price">{{ $offers->offer_1_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
-                            <a href="#" class="brave-offer__btn button button--c-transparent"><span class="button__text">ЗАКАЗАТЬ</span></a>
+                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{!! $offers->offer_1_title !!}"><span class="button__text">ЗАКАЗАТЬ</span></a>
                         </div>
                     </div>
                 </li>
@@ -343,7 +343,7 @@
                             <span class="brave-offer__price">{{ $offers->offer_2_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
-                            <a href="#" class="brave-offer__btn button button--c-transparent"><span class="button__text">ЗАКАЗАТЬ</span></a>
+                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{!! $offers->offer_2_title !!}"><span class="button__text">ЗАКАЗАТЬ</span></a>
                         </div>
                     </div>
                 </li>
@@ -363,7 +363,7 @@
                             <span class="brave-offer__price">{{ $offers->offer_3_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
-                            <a href="#" class="brave-offer__btn button button--c-transparent"><span class="button__text">ЗАКАЗАТЬ</span></a>
+                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{!! $offers->offer_3_title !!}"><span class="button__text">ЗАКАЗАТЬ</span></a>
                         </div>
                     </div>
                 </li>

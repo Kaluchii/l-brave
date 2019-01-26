@@ -40,6 +40,10 @@ return [
         ]
     ],
 
+    'signing_up' => [
+        'text' => ['text']
+    ],
+
     'habit' => [
         'text' => ['subtitle_text', 'text'],
         'image' => ['img']
@@ -61,7 +65,8 @@ return [
     'instagram' => [
         'groups' => [
             'posts_list' => [
-                'string' => ['post_link']
+                'string' => ['post_link'],
+                'image' => ['img']
             ]
         ]
     ],

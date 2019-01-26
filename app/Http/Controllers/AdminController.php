@@ -79,6 +79,14 @@ class AdminController extends Controller
     }
 
 
+    public function getSigning(){
+        $block = $this->extract->getBlock('signing_up');
+        return view('back.blocks.signing_up', [
+            'block' => $block
+        ]);
+    }
+
+
     public function getChallenge(){
         $block = $this->extract->getBlock('challenge');
         return view('back.blocks.challenge', [

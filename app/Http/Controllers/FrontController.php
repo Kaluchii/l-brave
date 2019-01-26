@@ -35,6 +35,7 @@ class FrontController extends Controller
         $about = $this->extract->getBlock('about');
         $atmosphere = $this->extract->getBlock('atmosphere');
         $reviews = $this->extract->getBlock('reviews');
+        $signing = $this->extract->getBlock('signing_up');
         $habit = $this->extract->getBlock('habit');
         $challenge = $this->extract->getBlock('challenge');
         $instagram = $this->extract->getBlock('instagram');
@@ -43,6 +44,7 @@ class FrontController extends Controller
         return view('front.index.index', [
             'all_site' => $all_site,
             'about' => $about,
+            'signing' => $signing,
             'atmosphere' => $atmosphere,
             'reviews' => $reviews,
             'habit' => $habit,

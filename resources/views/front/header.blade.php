@@ -15,7 +15,7 @@
                     <a href="#atmosphere" class="header__link js_goto_anchor">Галерея</a>
                 </li>
                 <li class="header__item">
-                    <a href="#reviews" class="header__link js_goto_anchor">Отзывы</a>
+                    <a href="#appeal" class="header__link js_goto_anchor">Обращение</a>
                 </li>
                 <li class="header__item">
                     <a href="#habit" class="header__link js_goto_anchor">Мотивация</a>
@@ -48,7 +48,7 @@
                         <a href="#atmosphere" class="mobile-menu__link js_goto_anchor">Галерея</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="#reviews" class="mobile-menu__link js_goto_anchor">Отзывы</a>
+                        <a href="#appeal" class="mobile-menu__link js_goto_anchor">Обращение</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="#habit" class="mobile-menu__link js_goto_anchor">Мотивация</a>

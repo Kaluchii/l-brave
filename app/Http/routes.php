@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/atmosphere',               'AdminController@getAtmosphere');
     Route::get('/atmosphere/{id}',          'AdminController@getGalleriesItem');
     Route::get('/reviews',                  'AdminController@getReviews');
+    Route::get('/signing-up',               'AdminController@getSigning');
     Route::get('/habit',                    'AdminController@getHabit');
     Route::get('/challenge',                'AdminController@getChallenge');
     Route::get('/instagram',                'AdminController@getInstagram');
