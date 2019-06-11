@@ -2,7 +2,7 @@
 @section('content')
     @include('front.index.meta')
 
-    <div class="main-page">
+    <main class="main-page">
 
         <section class="main-page__title-block title-block">
             <div class="title-block__title-wrap">
@@ -370,6 +370,6 @@
             </ul>
         </section>
 
-    </div>
+    </main>
 
 @endsection

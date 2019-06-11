@@ -194,7 +194,7 @@ gulp.task('image', function () {
 gulp.task('watch', function () {
     browserSync.init({
         browser: ["google-chrome"/*, "firefox"*/],
-        proxy: 'http://l-brave/',
+        proxy: 'http://localhost:8000/',
         notify: false,
         reloadDelay: 100,
         serveStatic: ['../css']
