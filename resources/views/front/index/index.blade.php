@@ -83,10 +83,10 @@
                 <h3 class="main-info__title title-l1" id="atmosphere">{{ $atmosphere->title }}</h3>
                 <p class="main-info__text">{!! $atmosphere->subtitle_text !!}</p>
             </div>
+            <script>
+                var galleries = [];
+            </script>
             <div class="atmosphere__media-bundles-list media-bundles">
-                <script>
-                    var galleries = [];
-                </script>
                 @foreach($atmosphere->galleries_group as $item)
                 <div class="media-bundles__item js_open_gallery" data-gallery-id="{{ $item->id }}">
                     <div class="media-bundles__img-wrap">
