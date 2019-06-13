@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li>
-                <a href="/adm/title">
+                <a href="/adm/title-block">
                     <i class="fa fa-circle-o"></i> <span>Титульный блок</span>
                 </a>
             </li>
