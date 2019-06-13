@@ -17,7 +17,7 @@
                 </div>--}}
             </div>
             <p class="title-block__objectives">
-                {!! $title_block->objectives !!}
+                <span class="title-block__objectives-item">{!! $title_block->objectives !!}</span>
                 {{--<span class="title-block__objectives-item">Спарринги</span>--}}
                 {{--<span class="title-block__objectives-item">Тренировки</span>--}}
                 {{--<span class="title-block__objectives-item">Самореализация</span>--}}
