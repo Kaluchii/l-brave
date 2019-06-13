@@ -7,7 +7,6 @@
         <section class="main-page__title-block title-block">
             <div class="title-block__title-wrap">
                 <h1 class="title-block__title">{!! $title_block->title !!}</h1>
-                в&nbsp;Алматы
                 {{--<div class="title-block__select-wrap">
                     <select name="in-city" id="in-city" class="title-block__select select">
                         <option value="">Талдыкоргане</option>
