@@ -1,13 +1,14 @@
 @extends('front.layout')
 @section('content')
-    @include('front.index.meta')
+    @include('front.meta')
 
     <main class="main-page">
 
         <section class="main-page__title-block title-block">
             <div class="title-block__title-wrap">
-                <h1 class="title-block__title">Любительские<br>спарринги</h1>
-                в&nbsp;Алматы{{--<div class="title-block__select-wrap">
+                <h1 class="title-block__title">{!! $title_block->title !!}</h1>
+                в&nbsp;Алматы
+                {{--<div class="title-block__select-wrap">
                     <select name="in-city" id="in-city" class="title-block__select select">
                         <option value="">Талдыкоргане</option>
                         <option value="">Алматы</option>
@@ -16,23 +17,34 @@
                     </select>
                 </div>--}}
             </div>
-            <div class="title-block__objectives">
-                <span class="title-block__objectives-item">Спарринги</span>
-                <span class="title-block__objectives-item">Тренировки</span>
-                <span class="title-block__objectives-item">Самореализация</span>
-            </div>
-            <div class="title-block__mans">
-                <div class="title-block__mans-item">
-                    <div class="title-block__man-name">Алтынбек Байтуров</div>
-                    <div class="title-block__man-occupation">Предпринематель</div>
-                    <div class="title-block__man-info">32 года ∙ 72 кг ∙ 180 см</div>
-                </div>
-                <div class="title-block__mans-item">
-                    <div class="title-block__man-name">Федор Овчинников</div>
-                    <div class="title-block__man-occupation">Дизайнер</div>
-                    <div class="title-block__man-info">32 года ∙ 72 кг ∙ 180 см</div>
-                </div>
-            </div>
+            <p class="title-block__objectives">
+                {!! $title_block->objectives !!}
+                {{--<span class="title-block__objectives-item">Спарринги</span>--}}
+                {{--<span class="title-block__objectives-item">Тренировки</span>--}}
+                {{--<span class="title-block__objectives-item">Самореализация</span>--}}
+            </p>
+            <ul class="title-block__mans">
+                <li class="title-block__mans-item">
+                    <p class="title-block__man-name">{{ $title_block->client_name_1 }}</p>
+                    <p class="title-block__man-occupation">{{ $title_block->profession_1 }}</p>
+                    <p class="title-block__man-info">{{ $title_block->specifications_1 }}</p>
+                </li>
+                <li class="title-block__mans-item">
+                    <p class="title-block__man-name">{{ $title_block->client_name_2 }}</p>
+                    <p class="title-block__man-occupation">{{ $title_block->profession_2 }}</p>
+                    <p class="title-block__man-info">{{ $title_block->specifications_2 }}</p>
+                </li>
+                {{--<div class="title-block__mans-item">--}}
+                    {{--<div class="title-block__man-name">Алтынбек Байтуров</div>--}}
+                    {{--<div class="title-block__man-occupation">Предпринематель</div>--}}
+                    {{--<div class="title-block__man-info">32 года ∙ 72 кг ∙ 180 см</div>--}}
+                {{--</div>--}}
+                {{--<div class="title-block__mans-item">--}}
+                    {{--<div class="title-block__man-name">Федор Овчинников</div>--}}
+                    {{--<div class="title-block__man-occupation">Дизайнер</div>--}}
+                    {{--<div class="title-block__man-info">32 года ∙ 72 кг ∙ 180 см</div>--}}
+                {{--</div>--}}
+            </ul>
         </section>
 
 

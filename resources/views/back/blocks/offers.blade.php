@@ -25,6 +25,16 @@
                           data-id="0">{{$block->text}}</textarea>
             </div>
 
+            <div class="form-group">
+                <label>Акция</label>
+                <input class="form-control string"
+                       type="text" placeholder=""
+                       value="{{$block->stock}}"
+                       data-name="stock"
+                       data-type="string"
+                       data-block="offers"
+                       data-id="0">
+            </div>
 
             <div class="box box-success">
                 <div class="box-header with-border">

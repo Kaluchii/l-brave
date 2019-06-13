@@ -32,7 +32,7 @@
         </div>
 
         <div class="feedback-form__input-wrap feedback-form__input-wrap--btn">
-            <input type="submit" value="Отправить" class="feedback-form__btn button button--orange js_send_form">
+            <input type="submit" value="ОТПРАВИТЬ" class="feedback-form__btn button button--orange js_send_form">
         </div>
     </div>
 </div>

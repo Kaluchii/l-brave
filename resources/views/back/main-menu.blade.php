@@ -8,6 +8,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/title">
+                    <i class="fa fa-circle-o"></i> <span>Титульный блок</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/about">
                     <i class="fa fa-circle-o"></i> <span>О Brave</span>
                 </a>

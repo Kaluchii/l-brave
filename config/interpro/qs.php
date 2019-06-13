@@ -10,6 +10,12 @@ return [
         'string' => ['inst', 'vk', 'fb', 'phone', 'copyright']
     ],
 
+    'title_block' => [
+        'text' => ['objectives'],
+        'string' => ['client_name_1', 'profession_1', 'specifications_1',
+                     'client_name_2', 'profession_2', 'specifications_2']
+    ],
+
     'about' => [
         'text' => ['subtitle_text', 'text'],
         'image' => ['img']
@@ -76,7 +82,8 @@ return [
             'offer_1_title', 'offer_2_title', 'offer_3_title',
             'offer_1_price', 'offer_2_price', 'offer_3_price',
             'offer_1_old_price', 'offer_2_old_price', 'offer_3_old_price',
-            'offer_1_discount', 'offer_2_discount', 'offer_3_discount'
+            'offer_1_discount', 'offer_2_discount', 'offer_3_discount',
+            'stock'
         ],
         'text' => ['text', 'offer_1_text', 'offer_2_text', 'offer_3_text'],
     ],

@@ -32,6 +32,7 @@ class FrontController extends Controller
         $this->extract->tuneSelection('gallery_slides')->sortBy('sorter','ASC');
 
         $all_site = $this->extract->getBlock('all_site');
+        $title_block = $this->extract->getBlock('title_block');
         $about = $this->extract->getBlock('about');
         $atmosphere = $this->extract->getBlock('atmosphere');
         $reviews = $this->extract->getBlock('reviews');
@@ -43,6 +44,7 @@ class FrontController extends Controller
         $offers = $this->extract->getBlock('offers');
         return view('front.index.index', [
             'all_site' => $all_site,
+            'title_block' => $title_block,
             'about' => $about,
             'signing' => $signing,
             'atmosphere' => $atmosphere,

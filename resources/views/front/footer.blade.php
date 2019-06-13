@@ -3,7 +3,7 @@
         <div class="footer__lead-wrap">
             <p class="footer__lead">
                 {{--<a href="#" class="link link_style_accent link_style_underline footer__lead-link">Пригласите друга</a> и получите скидку 20% на два абонемента.--}}
-                Пригласите друга и получите скидку 20% на два абонемента.
+                {!! $offers->stock !!}
             </p>
         </div>
         <div class="container">
