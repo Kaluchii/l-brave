@@ -23,7 +23,7 @@
                           data-id="0">{{$block->objectives}}</textarea>
             </div>
             <div class="form-group">
-                <label>Клиент1: Имя Фам.</label>
+                <label>Боец-1:</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$block->client_name_1}}"
@@ -53,7 +53,7 @@
                        data-id="0">
             </div>
             <div class="form-group">
-                <label>Клиент2: Имя Фам.</label>
+                <label>Боец-2:</label>
                 <input class="form-control string"
                        type="text" placeholder=""
                        value="{{$block->client_name_2}}"
