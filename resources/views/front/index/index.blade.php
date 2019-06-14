@@ -93,7 +93,7 @@
                     </div>
                     <div class="media-bundles__text-wrap">
                         <p class="media-bundles__name">{{ $item->gallery_name }}</p>
-                        <div class="media-bundles__amount-content">{{ $item->explanation }}</div>
+                        <div class="media-bundles__amount-content"><span class="js_plural hidden">{{ $item->gallery_slides_group->count() }}/фотография/фотографии/фотографий</span></div>
                     </div>
                     <script>
                         galleries['{{ $item->id }}'] = [
