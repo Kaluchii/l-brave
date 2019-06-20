@@ -305,8 +305,9 @@
 
 
         <section class="main-page__proverb proverb">
-            <p class="proverb__text">Лучше время посадить дерево — 20&nbsp;лет&nbsp;назад.<br>
-                Второе лучшее время — сейчас.
+            <p class="proverb__text">
+                У человека всего две жизни, причем вторая начинается тогда, <br>
+                когда мы понимаем, что жизнь всего одна.
             </p>
             <div class="proverb__what">Китайская пословица</div>
         </section>
