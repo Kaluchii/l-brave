@@ -245,7 +245,7 @@
                 <h3 class="first-challenge__title title-l1">{{ $challenge->title }}</h3>
                 <p class="first-challenge__text">{!! $challenge->text !!}</p>
                 <div class="first-challenge__btn-wrap">
-                    <a href="#offer_form" class="first-challenge__btn button js_offer" data-offer-name="{{ $challenge->title }}><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
+                    <a href="#offer_form" class="first-challenge__btn button js_offer" data-offer-name="{!! $challenge->title !!}"><span class="button__text">ПРИНЯТЬ ВЫЗОВ</span></a>
                 </div>
             </div>
         </section>
@@ -334,7 +334,7 @@
                             <span class="brave-offer__price">{{ $offers->offer_1_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
-                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{{ $offers->offer_1_title }}"><span class="button__text">ЗАКАЗАТЬ</span></a>
+                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{!! $offers->offer_1_title !!}"><span class="button__text">ЗАКАЗАТЬ</span></a>
                         </div>
                     </div>
                 </li>
@@ -354,7 +354,7 @@
                             <span class="brave-offer__price">{{ $offers->offer_2_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
-                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{{ $offers->offer_2_title }}"><span class="button__text">ЗАКАЗАТЬ</span></a>
+                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{!! $offers->offer_2_title !!}"><span class="button__text">ЗАКАЗАТЬ</span></a>
                         </div>
                     </div>
                 </li>
@@ -374,7 +374,7 @@
                             <span class="brave-offer__price">{{ $offers->offer_3_price }}</span>
                         </div>
                         <div class="brave-offer__btn-wrap">
-                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{{ $offers->offer_3_title }}"><span class="button__text">ЗАКАЗАТЬ</span></a>
+                            <a href="#offer_form" class="brave-offer__btn button button--c-transparent js_offer" data-offer-name="{!! $offers->offer_3_title !!}"><span class="button__text">ЗАКАЗАТЬ</span></a>
                         </div>
                     </div>
                 </li>
