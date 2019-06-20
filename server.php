@@ -1,4 +1,4 @@
-<?php
+<?phpjs_call_back
 
 /**
  * Laravel - A PHP Framework For Web Artisans

@@ -125,7 +125,7 @@
                 <h3 class="create-profile__title title-l3">{{ $signing->title }}</h3>
                 <p class="create-profile__text">{!! $signing->text !!}</p>
                 <div class="create-profile__btn-wrap">
-                    <a href="#offer_form" class="create-profile__btn button js_offer" data-offer-name="{!! $signing->title !!}><span class="button__text">ЗАПИСАТЬСЯ</span></a>
+                    <a href="#offer_form" class="create-profile__btn button js_offer" data-offer-name="{{ $signing->title }}"><span class="button__text">ЗАПИСАТЬСЯ</span></a>
                 </div>
             </div>
         </section>
