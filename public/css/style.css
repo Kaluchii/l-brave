@@ -2460,15 +2460,9 @@ img.mfp-img {
 	min-height : 100%;
 	object-fit : cover;
 	object-position : center;
-	-webkit-filter : grayscale(100%);
-	        filter : grayscale(100%);
-	-webkit-transition : 0.4s;
-	        transition : 0.4s;
 	background-color : #cccccc;
 }
 .instagram__img:hover {
-	-webkit-filter : grayscale(0);
-	        filter : grayscale(0);
 	background-color : #aaaaaa;
 }
 .instagram__subscribe-text {
