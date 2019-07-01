@@ -7,19 +7,19 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*",
-        "interpro/core": "1.1.*",
-        "interpro/service": "^1.1",
+        "laravel/framework": "5.2.45",
+        "interpro/core": "1.1.3",
+        "interpro/service": "1.1.3",
 
-        "interpro/imageaggr": "1.1.*",
-        "interpro/qsaggr": "1.1.*",
-        "interpro/fileaggr": "1.0.*",
+        "interpro/imageaggr": "1.1.12",
+        "interpro/qsaggr": "1.1.3",
+        "interpro/fileaggr": "1.0.5",
 
-        "interpro/entrance": "1.1.*",
-        "interpro/extractor": "1.0.*",
-        "interpro/feedback": "1.0.*",
-        "interpro/scalar": "1.0.*",
-        "interpro/seo": "1.0.*"
+        "interpro/entrance": "1.1.4",
+        "interpro/extractor": "1.0.13",
+        "interpro/feedback": "1.0.6",
+        "interpro/scalar": "1.0.10",
+        "interpro/seo": "1.0.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
