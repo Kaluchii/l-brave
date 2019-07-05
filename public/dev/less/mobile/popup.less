@@ -16,6 +16,9 @@
   .popup {
     padding-left: 30px;
     padding-right: 30px;
+    background-image: url(/img/popup_bg.png);
+    background-size: 200px;
+    background-position: -2px ~'calc(100% + 41.5px)';
 
     &__top-cover, &__bottom-cover{
       height: 30px;
@@ -34,7 +37,9 @@
       background-image: url(/img/popup_bg.png), linear-gradient(to right, transparent 0%, transparent 30px, #ebeff2 30px,
       #ebeff2 ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
       background-repeat: no-repeat;
-      background-position: -2px -276px, 0 0;
+      background-position: -2px -176px, 0 0;
+      background-size: 200px, auto;
+
 
       &::before{
         border: none;

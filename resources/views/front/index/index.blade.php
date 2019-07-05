@@ -128,10 +128,8 @@
                     Это полная эмоциональная перезагрузка, избавление от непрожитой агрессии.
                 </p>
                 <div class="sparring__info">
-                    <img src="/img/sparring_img_r.png" alt="" class="sparring__info-img sparring__info-img--right js_scroll_animate" data-viewport-offset="30" data-animation="animate">
-                    <img src="/img/sparring_img_l.png" alt="" class="sparring__info-img sparring__info-img--left js_scroll_animate" data-viewport-offset="30" data-animation="animate">
                     <div class="sparring__info-row sparring__info-row--1">
-                        <p class="sparring__info-text">
+                        <p class="sparring__info-text sparring__info-text--tl">
                             Бой проходит в защитной экипировке, под контролем рефери и врача.
                         </p>
                         <p class="sparring__info-text sparring__info-text--tr">
@@ -139,6 +137,8 @@
                         </p>
                     </div>
                     <div class="sparring__info-row sparring__info-row--2">
+                        <img src="/img/sparring_img_r.png" alt="" class="sparring__info-img sparring__info-img--right js_scroll_animate" data-viewport-offset="30" data-animation="animate">
+                        <img src="/img/sparring_img_l.png" alt="" class="sparring__info-img sparring__info-img--left js_scroll_animate" data-viewport-offset="30" data-animation="animate">
                         <p class="sparring__info-text sparring__info-text--bl">
                             Время спарринга, виды ударов и стиль боя оговариваются и контролируются.
                         </p>
