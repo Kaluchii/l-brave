@@ -10,6 +10,7 @@ var
     reporter     = require('postcss-reporter'),
     htmllint     = require('gulp-htmllint'),
     stylelint    = require('stylelint'),
+    changed      = require('gulp-changed'),
 
     svgmin       = require('gulp-svgmin'),
     imagemin     = require('gulp-imagemin'),
@@ -156,6 +157,7 @@ gulp.task('image', function () {
     // Оптимизация всех файлов кроме векторных
     gulp.src(devImg + '**.' + image_ext)
         .pipe(plumber())
+        .pipe(changed(productionImg))
         .pipe(imagemin({
             progressive      : false,
             interlaced       : true,

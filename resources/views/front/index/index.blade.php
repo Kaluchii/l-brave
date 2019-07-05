@@ -120,6 +120,67 @@
         </section>
 
 
+        <section class="main-page__sparring sparring">
+            <div class="sparring__wrap">
+                <h2 class="sparring__title title-l1">Спарринги Brave</h2>
+                <p class="sparring__text">
+                    Спарринги — сильный инструмент борьбы со страхом и неуверенностью.
+                    Это полная эмоциональная перезагрузка, избавление от непрожитой агрессии.
+                </p>
+                <div class="sparring__info">
+                    <img src="/img/sparring_img_r.png" alt="" class="sparring__info-img sparring__info-img--right js_scroll_animate" data-viewport-offset="30" data-animation="animate">
+                    <img src="/img/sparring_img_l.png" alt="" class="sparring__info-img sparring__info-img--left js_scroll_animate" data-viewport-offset="30" data-animation="animate">
+                    <div class="sparring__info-row sparring__info-row--1">
+                        <p class="sparring__info-text">
+                            Бой проходит в защитной экипировке, под контролем рефери и врача.
+                        </p>
+                        <p class="sparring__info-text sparring__info-text--tr">
+                            Спаррингуйте с другом, инструктором или соперником из участников Brave.
+                        </p>
+                    </div>
+                    <div class="sparring__info-row sparring__info-row--2">
+                        <p class="sparring__info-text sparring__info-text--bl">
+                            Время спарринга, виды ударов и стиль боя оговариваются и контролируются.
+                        </p>
+                        <p class="sparring__info-text sparring__info-text--br">
+                            Перед спаррингом обязательны разминка и инструктаж.
+                        </p>
+                    </div>
+                </div>
+                <div class="sparring__etiquette">
+                    <h3 class="sparring__etiquette-title">
+                        Этикет спаррингов
+                    </h3>
+                    <ul class="sparring__etiquette-list">
+                        <li class="sparring__etiquette-item">
+                            Мы называем соперника хорошим словом «Друг» и относимся так же. 
+                        </li>
+                        <li class="sparring__etiquette-item">
+                            Запрещены удары в глаза, горло и суставы, по затылку и после того как,
+                            поединок завершен.
+                        </li>
+                        <li class="sparring__etiquette-item">
+                            Как правило, соперники по-дружески обнимаются по завершению поединка.
+                        </li>
+                        <li class="sparring__etiquette-item">
+                            Поединок прекращается словом «Стоп», а так же если соперник
+                            выдохся или останавливает спарринг.
+                        </li>
+                        <li class="sparring__etiquette-item">
+                            Приветствуется покричать друг на друга перед спаррингом и
+                            зарядиться эмоционально.
+                        </li>
+                        <li class="sparring__etiquette-item">
+                            Для участия в спаррингах
+                            не требуется подготовка. По желанию, возможно участие в
+                            бойцовском рейтинге Brave.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
         <section class="main-page__create-profile create-profile">
             <div class="create-profile__wrapper">
                 <h3 class="create-profile__title title-l3">{{ $signing->title }}</h3>

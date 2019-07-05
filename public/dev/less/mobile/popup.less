@@ -19,13 +19,25 @@
 
     &__top-cover, &__bottom-cover{
       height: 30px;
-      background: linear-gradient(to right, transparent 0%, transparent 30px, #FFFFFF 30px,
-                  #FFFFFF ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
+      background: linear-gradient(to right, transparent 0%, transparent 30px, #ebeff2 30px,
+                  #ebeff2 ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
 
       &::before, &::after{
-        border: 15px solid #FFFFFF;
+        border: 15px solid #ebeff2;
         border-top: 15px solid transparent;
         border-left: 15px solid transparent;
+      }
+    }
+
+    &__bottom-cover{
+      top: 100%;
+      background-image: url(/img/popup_bg.png), linear-gradient(to right, transparent 0%, transparent 30px, #ebeff2 30px,
+      #ebeff2 ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
+      background-repeat: no-repeat;
+      background-position: -2px -276px, 0 0;
+
+      &::before{
+        border: none;
       }
     }
 

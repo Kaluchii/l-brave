@@ -1,0 +1,129 @@
+.sparring{
+  color: #3f4551;
+  font-size: 20px;
+  padding: 50px 70px 0;
+
+  &__title{
+    text-align: center;
+  }
+
+  &__text{
+    max-width: 666px;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__info{
+    position: relative;
+    margin-top: 45px;
+
+    &::before{
+      content: '';
+      position: absolute; 
+      left: 0;
+      bottom: -110px;
+      display: block;
+      height: 55px;
+      width: 100%;
+      background-image: url(/img/footer-separator.png);
+    }
+  }
+
+  &__info-img{
+    position: absolute;
+    transition: 1s ease-out;
+    opacity: 0;
+
+
+    &--left{
+      top: 43%;
+      left: -10%;
+      transform: translate3d(0, -50%, 0);
+
+      &.animated{
+        left: 50%;
+        transform: translate3d(-82%, -50%, 0);
+        opacity: 1;
+      }
+    }
+
+    &--right{
+      top: 53%;
+      right: -10%;
+      transform: translate3d(0, -50%, 0);
+
+      &.animated{
+        right: 50%;
+        transform: translate3d(60%, -50%, 0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__info-row{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+
+    &--1{
+
+    }
+
+    &--2{
+      margin-top: 270px;
+    }
+  }
+
+  &__info-text{
+    width: 310px;
+
+    &--bl{
+      margin-left: 50px;
+    }
+
+    &--tr{
+      margin-top: 80px;
+    }
+
+    &--br{
+      margin-top: 60px;
+      margin-right: 120px;
+    }
+  }
+
+  &__etiquette{
+    margin-top: 150px;
+  }
+
+  &__etiquette-title{
+    font-size: 36px;
+    padding-left: 25px;
+  }
+
+  &__etiquette-list{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__etiquette-item{
+    position: relative;
+    margin-top: 40px;
+    padding-left: 25px;
+    width: 320px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #f28b11;
+    }
+  }
+}
