@@ -17,42 +17,33 @@
   &__info{
     position: relative;
     margin-top: 45px;
-
-    &::before{
-      content: '';
-      position: absolute; 
-      left: 0;
-      bottom: -110px;
-      display: block;
-      height: 55px;
-      width: 100%;
-      background-image: url(/img/footer-separator.png);
-    }
   }
 
   &__info-img{
     position: absolute;
     transition: 1s ease-out;
-    opacity: 1;
+    opacity: 0;
 
 
     &--left{
-      top: 100px;
-      right: 40%;
-      width: 250px;
-      transform: translate3d(0, 0, 0);
+      top: 80px;
+      left: -80px;
 
       &.animated{
+        left: 50%;
+        transform: translateX(-135%);
+        opacity: 1;
       }
     }
 
     &--right{
       top: 0;
-      left: 40%;
-      width: 500px;
-      transform: translate3d(0, 0, 0);
+      right: -250px;
 
       &.animated{
+        right: 50%;
+        transform: translateX(82%);
+        opacity: 1;
       }
     }
   }
@@ -67,7 +58,7 @@
     }
 
     &--2{
-      margin-top: -50px;
+      margin-top: -100px;
       position: relative;
       padding-top: 400px;
     }
@@ -81,19 +72,32 @@
     }
 
     &--bl{
-      margin-left: 50px;
-      margin-top: 140px;
+      margin-left: 350px;
+      margin-top: -50px;
     }
 
     &--tr{
     }
 
     &--br{
+      margin-top: 40px;
     }
   }
 
   &__etiquette{
-    margin-top: 150px;
+    position: relative;
+    margin-top: 200px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -73px;
+      display: block;
+      height: 55px;
+      width: 100%;
+      background-image: url(/img/footer-separator.png);
+    }
   }
 
   &__etiquette-title{
