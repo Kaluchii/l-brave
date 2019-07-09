@@ -136,9 +136,9 @@
                             Спаррингуйте с другом, инструктором или соперником из участников Brave.
                         </p>
                     </div>
-                    <div class="sparring__info-row sparring__info-row--2">
-                        <img src="/img/sparring_img_r.png" alt="" class="sparring__info-img sparring__info-img--right js_scroll_animate" data-viewport-offset="30" data-animation="animate">
-                        <img src="/img/sparring_img_l.png" alt="" class="sparring__info-img sparring__info-img--left js_scroll_animate" data-viewport-offset="30" data-animation="animate">
+                    <div class="sparring__info-row sparring__info-row--2 js_scroll_animate" data-viewport-offset="30" data-animation="animate">
+                        <img src="/img/sparring_img_r.png" alt="" class="sparring__info-img sparring__info-img--right js_scroll_animate">
+                        <img src="/img/sparring_img_l.png" alt="" class="sparring__info-img sparring__info-img--left">
                         <p class="sparring__info-text sparring__info-text--bl">
                             Время спарринга, виды ударов и стиль боя оговариваются и контролируются.
                         </p>
