@@ -23,6 +23,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/sparring">
+                    <i class="fa fa-bolt"></i> <span>Спарринг</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/signing-up">
                     <i class="fa fa-edit"></i> <span>Запись</span>
                 </a>

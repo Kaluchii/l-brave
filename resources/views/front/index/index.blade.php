@@ -122,28 +122,29 @@
 
         <section class="main-page__sparring sparring">
             <div class="sparring__wrap">
-                <h2 class="sparring__title title-l1">Спарринги Brave</h2>
+                <h2 class="sparring__title title-l1">{{ $sparring->title }}{{--Спарринги Brave--}}</h2>
                 <p class="sparring__text">
-                    Спарринги — сильный инструмент борьбы со страхом и неуверенностью.
-                    Это полная эмоциональная перезагрузка, избавление от непрожитой агрессии.
+                    {!! $sparring->subtitle !!}
+                    {{--Спарринги — сильный инструмент борьбы со страхом и неуверенностью.
+                    Это полная эмоциональная перезагрузка, избавление от непрожитой агрессии.--}}
                 </p>
                 <div class="sparring__info">
                     <div class="sparring__info-row sparring__info-row--1">
                         <p class="sparring__info-text sparring__info-text--tl">
-                            Бой проходит в защитной экипировке, под контролем рефери и врача.
+                            {!! $sparring->text_1 !!}
                         </p>
                         <p class="sparring__info-text sparring__info-text--tr">
-                            Спаррингуйте с другом, инструктором или соперником из участников Brave.
+                            {!! $sparring->text_2 !!}
                         </p>
                     </div>
                     <div class="sparring__info-row sparring__info-row--2 js_scroll_animate" data-viewport-offset="30" data-animation="animate">
                         <img src="/img/sparring_img_r.png" alt="" class="sparring__info-img sparring__info-img--right js_scroll_animate">
                         <img src="/img/sparring_img_l.png" alt="" class="sparring__info-img sparring__info-img--left">
                         <p class="sparring__info-text sparring__info-text--bl">
-                            Время спарринга, виды ударов и стиль боя оговариваются и контролируются.
+                            {!! $sparring->text_3 !!}
                         </p>
                         <p class="sparring__info-text sparring__info-text--br">
-                            Перед спаррингом обязательны разминка и инструктаж.
+                            {!! $sparring->text_4 !!}
                         </p>
                     </div>
                 </div>

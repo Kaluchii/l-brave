@@ -35,6 +35,7 @@ class FrontController extends Controller
         $title_block = $this->extract->getBlock('title_block');
         $about = $this->extract->getBlock('about');
         $atmosphere = $this->extract->getBlock('atmosphere');
+        $sparring = $this->extract->getBlock('sparring');
         $reviews = $this->extract->getBlock('reviews');
         $signing = $this->extract->getBlock('signing_up');
         $habit = $this->extract->getBlock('habit');
@@ -48,6 +49,7 @@ class FrontController extends Controller
             'about' => $about,
             'signing' => $signing,
             'atmosphere' => $atmosphere,
+            'sparring' => $sparring,
             'reviews' => $reviews,
             'habit' => $habit,
             'challenge' => $challenge,

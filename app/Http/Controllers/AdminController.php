@@ -55,6 +55,14 @@ class AdminController extends Controller
     }
 
 
+    public function getSparring(){
+        $block = $this->extract->getBlock('sparring');
+        return view('back.blocks.sparring', [
+            'block' => $block
+        ]);
+    }
+
+
     public function getGalleriesItem( $id ){
         $item = $this->extract->getGroupItem('galleries', $id);
         return view('back.groups.galleries.galleries', [

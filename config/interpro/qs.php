@@ -36,6 +36,10 @@ return [
         ]
     ],
 
+    'sparring' => [
+      'text' => ['subtitle', 'text_1', 'text_2', 'text_3', 'text_4']
+    ],
+
     'reviews' => [
         'groups' => [
             'reviews_list' => [
