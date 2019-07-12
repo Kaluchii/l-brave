@@ -103,7 +103,7 @@
                 <!-- /.box-body -->
             </div>
             <div class="form-group">
-                <label>Изображение (500x500 пикселей)</label>
+                <label>Изображение (1280x800 пикселей)</label>
                 <div class="dropzone">
                     <div class="file-input">
                         <div class="file-preview">

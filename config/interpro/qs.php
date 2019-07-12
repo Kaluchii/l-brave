@@ -91,6 +91,7 @@ return [
             'stock'
         ],
         'text' => ['text', 'offer_1_text', 'offer_2_text', 'offer_3_text'],
+        'image' => ['img_1', 'img_2', 'img_3']
     ],
 
 ];

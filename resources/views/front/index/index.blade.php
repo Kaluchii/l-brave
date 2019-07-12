@@ -381,7 +381,7 @@
                 <p class="main-info__text">{!! $offers->text !!}</p>
             </div>
             <ul class="join-brave__offers">
-                <li class="join-brave__offer brave-offer brave-offer--1">
+                <li class="join-brave__offer brave-offer brave-offer--1" style="background: url('{{$offers->img_1->link}}') no-repeat center / cover">
                     <div class="brave-offer__top">
                         <div class="brave-offer__title">{!! $offers->offer_1_title !!}</div>
                         <div class="brave-offer__description">{!! $offers->offer_1_text !!}</div>
@@ -401,7 +401,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="join-brave__offer brave-offer brave-offer--2">
+                <li class="join-brave__offer brave-offer brave-offer--2" style="background: url('{{$offers->img_2->link}}') no-repeat center / cover">
                     <div class="brave-offer__top">
                         <div class="brave-offer__title">{!! $offers->offer_2_title !!}</div>
                         <div class="brave-offer__description">{!! $offers->offer_2_text !!}</div>
@@ -421,7 +421,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="join-brave__offer brave-offer brave-offer--3">
+                <li class="join-brave__offer brave-offer brave-offer--3" style="background: url('{{$offers->img_3->link}}') no-repeat center / cover">
                     <div class="brave-offer__top">
                         <div class="brave-offer__title">{!! $offers->offer_3_title !!}</div>
                         <div class="brave-offer__description">{!! $offers->offer_3_text !!}</div>
