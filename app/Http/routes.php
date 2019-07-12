@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'],function(){
     Route::get('/title-block',              'AdminController@getTitleBlock');
     Route::get('/about',                    'AdminController@getAbout');
     Route::get('/atmosphere',               'AdminController@getAtmosphere');
+    Route::get('/sparring',                 'AdminController@getSparring');
     Route::get('/atmosphere/{id}',          'AdminController@getGalleriesItem');
     Route::get('/reviews',                  'AdminController@getReviews');
     Route::get('/signing-up',               'AdminController@getSigning');

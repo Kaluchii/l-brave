@@ -21,30 +21,18 @@
 
   &__info-img{
     position: absolute;
-    transition: 1s ease-out;
+    transition: 0.8s ease-in-out;
     opacity: 0;
 
 
     &--left{
       top: 80px;
-      left: -80px;
-
-      &.animated{
-        left: 50%;
-        transform: translateX(-135%);
-        opacity: 1;
-      }
+      left: 20px;
     }
 
     &--right{
       top: 0;
-      right: -250px;
-
-      &.animated{
-        right: 50%;
-        transform: translateX(82%);
-        opacity: 1;
-      }
+      right: -130px;
     }
   }
 
@@ -61,6 +49,22 @@
       margin-top: -100px;
       position: relative;
       padding-top: 400px;
+
+      &.animated{
+        .sparring__info-img{
+          &--left{
+            left: 50%;
+            transform: translateX(-135%);
+            opacity: 1;
+          }
+
+          &--right{
+            right: 50%;
+            transform: translateX(82%);
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 

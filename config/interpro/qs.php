@@ -24,6 +24,7 @@ return [
     'atmosphere' => [
         'text' => ['subtitle_text'],
         'string' => ['channel_name', 'explanation', 'channel_link'],
+        'image' => ['img'],
         'groups' => [
             'galleries' => [
                 'string' => ['gallery_name', 'explanation'],
@@ -34,6 +35,10 @@ return [
                 'galleries' => ['superior']
             ],
         ]
+    ],
+
+    'sparring' => [
+      'text' => ['subtitle', 'text_1', 'text_2', 'text_3', 'text_4']
     ],
 
     'reviews' => [

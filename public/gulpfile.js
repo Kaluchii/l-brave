@@ -205,7 +205,7 @@ gulp.task('watch', function () {
     gulp.watch('*.*',{cwd: devImg}, ['image']);
     gulp.watch('*.less',{cwd: devCss}, ['style']);
     gulp.watch('**/*.less',{cwd: devCss}, ['style']);
-    gulp.watch( '*.js',{cwd: devJs}, ['js']);
+    gulp.watch('*.js',{cwd: devJs}, ['js']);
     gulp.watch('plugins/*.js',{cwd: devJs}, ['vendor-js']);
     gulp.watch('plugins/**/*.js',{cwd: devJs}, ['vendor-js']);
     gulp.watch('**/*.php',{cwd: html}, ['php']);
