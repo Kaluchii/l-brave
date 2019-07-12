@@ -126,6 +126,7 @@
         padding: 0;
         cursor: pointer;
         button {
+            position: relative;
             border: 0;
             background: transparent;
             display: block;
@@ -144,24 +145,26 @@
                 }
             }
             &:before {
+                content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
-                content: @slick-dot-character;
-                width: 20px;
-                height: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
                 font-family: @slick-font-family;
                 font-size: @slick-dot-size;
                 line-height: 20px;
                 text-align: center;
-                color: @slick-dot-color;
+                background-color: @slick-dot-color;
                 opacity: @slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
         }
         &.slick-active button:before {
-            color: @slick-dot-color-active;
+            background-color: @slick-dot-color-active;
             opacity: @slick-opacity-default;
         }
     }
