@@ -24,7 +24,7 @@
             </li>
             <li>
                 <a href="/adm/sparring">
-                    <i class="fa fa-bolt"></i> <span>Спарринг</span>
+                    <i class="fa fa-bell"></i> <span>Спарринг</span>
                 </a>
             </li>
             <li>

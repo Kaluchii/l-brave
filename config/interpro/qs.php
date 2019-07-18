@@ -37,7 +37,13 @@ return [
     ],
 
     'sparring' => [
-      'text' => ['subtitle', 'text_1', 'text_2', 'text_3', 'text_4']
+      'text' => ['subtitle', 'text_1', 'text_2', 'text_3', 'text_4'],
+        'string' => ['etiquette_title'],
+        'groups' => [
+            'etiquette_list' => [
+                'text' => ['text']
+            ]
+        ]
     ],
 
     'reviews' => [

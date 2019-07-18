@@ -35,7 +35,7 @@
                 </div>
                 <div class="footer__section">
                     <span class="footer__header">Телефон и WhatsApp для справок&nbsp;и&nbsp;записи</span>
-                    <a href="tel:{{ $all_site->phone }}" class="footer__phone">{{ $all_site->phone }}</a>
+                    <a href="tel:{{ str_replace(array(' ', '(' , ')', '-'), '', $all_site->phone) }}" class="footer__phone">{{ $all_site->phone }}</a>
                     {{--<a href="#" class="link link_style_accent link_style_underline footer__franchise">Хотите открыть Brave в своем зале?</a>--}}
                     <span class="footer__franchise">Хотите открыть Brave в своем зале?</span>
                 </div>

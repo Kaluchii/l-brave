@@ -150,32 +150,14 @@
                 </div>
                 <div class="sparring__etiquette">
                     <h3 class="sparring__etiquette-title">
-                        Этикет спаррингов
+                        {{ $sparring->etiquette_title }}
                     </h3>
                     <ul class="sparring__etiquette-list">
+                        @foreach($sparring->etiquette_list_group as $item)
                         <li class="sparring__etiquette-item">
-                            Мы называем соперника хорошим словом «Друг» и относимся так же. 
+                            {!! $item->text !!}
                         </li>
-                        <li class="sparring__etiquette-item">
-                            Запрещены удары в глаза, горло и суставы, по затылку и после того как,
-                            поединок завершен.
-                        </li>
-                        <li class="sparring__etiquette-item">
-                            Как правило, соперники по-дружески обнимаются по завершению поединка.
-                        </li>
-                        <li class="sparring__etiquette-item">
-                            Поединок прекращается словом «Стоп», а так же если соперник
-                            выдохся или останавливает спарринг.
-                        </li>
-                        <li class="sparring__etiquette-item">
-                            Приветствуется покричать друг на друга перед спаррингом и
-                            зарядиться эмоционально.
-                        </li>
-                        <li class="sparring__etiquette-item">
-                            Для участия в спаррингах
-                            не требуется подготовка. По желанию, возможно участие в
-                            бойцовском рейтинге Brave.
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
