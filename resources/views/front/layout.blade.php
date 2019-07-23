@@ -6,14 +6,19 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
+    {{--    Social    --}}
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:image" content="https://ibrave.kz/img/atmosphere_bg.jpg"/>
+    <meta itemprop="image" content="https://ibrave.kz/img/atmosphere_bg.jpg"/>
+    <meta name="twitter:image" content="https://ibrave.kz/img/atmosphere_bg.jpg">
 
     @yield('meta')
     @include('front.styles')
     @yield('styles')
-    {{--{!! $scripts->before_head_close_field !!}--}}
+    {!! $scripts->before_head_close_field !!}
 </head>
 <body>
-{{--    {!! $scripts->after_open_field !!}--}}
+    {!! $scripts->after_body_open_field !!}
 
     <div class="page-wrapper">
         @include('front.header')
@@ -37,7 +42,7 @@
     @include('front.scripts')
     @yield('scripts')
 
-{{--    {!! $scripts->before_close_field !!}--}}
+    {!! $scripts->before_head_close_field !!}
 
 </body>
 </html>
