@@ -11,7 +11,6 @@ $(function () {
         adaptiveHeight: true*/
     });
 
-
     $('.select').select2();
 
 

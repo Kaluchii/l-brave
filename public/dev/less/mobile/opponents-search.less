@@ -1,0 +1,50 @@
+@media all and (max-width: 1275px){
+  .opponent-search{
+    &__criterions{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__field{
+      max-width: 400px;
+      & + &{
+        margin-left: 0;
+      }
+      &:nth-child(2n){
+        margin-left: 20px;
+      }
+    }
+    &__field--btn{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 980px){
+  .opponent-search{
+    &__field{
+      max-width: 420px;
+      &:nth-child(2n){
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px){
+  .opponent-search{
+    padding: 60px 20px 35px;
+    background: url("/img/opponent-search_bg.jpg") no-repeat center / cover;
+
+    &__result{
+      margin-top: 20px;
+    }
+
+    &__about-battles{
+      margin-top: 20px;
+    }
+  }
+}

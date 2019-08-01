@@ -163,20 +163,67 @@
             </div>
         </section>
 
+{{--        <section class="main-page__search-box search-box">--}}
+{{--            <h2 class="search-box__title title-l1">Найдите соперника и друга</h2>--}}
+{{--            <p class="search-box__text">--}}
+{{--                Выберите соперника, который вам по силам и вступите в спарринг.--}}
+{{--                <br> В спаринге вы победите страх.--}}
+{{--            </p>--}}
+{{--            <div class="search-box__wrapper">--}}
+{{--                <div class="search-box__center-row">--}}
+{{--                    <ul class="search-box__select-list">--}}
+{{--                        <li class="search-box__select-item">--}}
+{{--                            <p class="search-box__select-item-text">Ваш город</p>--}}
+{{--                            <select name="" id="">--}}
+{{--                                <option value="">Талдыкорган</option>--}}
+{{--                                <option value="">Алматы</option>--}}
+{{--                            </select>--}}
+{{--                        </li>--}}
+{{--                        <li class="search-box__select-item">--}}
+{{--                            <p class="search-box__select-item-text">Ваш город</p>--}}
+{{--                            <select name="" id="">--}}
+{{--                                <option value="">Талдыкорган</option>--}}
+{{--                                <option value="">Алматы</option>--}}
+{{--                            </select>--}}
+{{--                        </li>--}}
+{{--                        <li class="search-box__select-item">--}}
+{{--                            <p class="search-box__select-item-text">Ваш город</p>--}}
+{{--                            <select name="" id="">--}}
+{{--                                <option value="">Талдыкорган</option>--}}
+{{--                                <option value="">Алматы</option>--}}
+{{--                            </select>--}}
+{{--                        </li>--}}
+{{--                        <li class="search-box__select-item">--}}
+{{--                            <p class="search-box__select-item-text">Ваш город</p>--}}
+{{--                            <select name="" id="">--}}
+{{--                                <option value="">Талдыкорган</option>--}}
+{{--                                <option value="">Алматы</option>--}}
+{{--                            </select>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                    <button class="search-box__btn button">ПОКАЗАТЬ</button>--}}
+{{--                </div>--}}
+{{--                <p class="search-box__minor-text">--}}
+{{--                    Спарринг проводится в защитной экипировке по--}}
+{{--                    <a href="#" class="link">правилам Brave</a>--}}
+{{--                    под надзором инструктора и рефири.--}}
+{{--                </p>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
-        <section class="main-page__create-profile create-profile">
-            <div class="create-profile__wrapper">
-                <h3 class="create-profile__title title-l3">{{ $signing->title }}</h3>
-                <p class="create-profile__text">{!! $signing->text !!}</p>
-                <div class="create-profile__btn-wrap">
-                    <a href="#offer_form" class="create-profile__btn button js_offer" data-offer-name="{{ $signing->title }}"><span class="button__text">ЗАПИСАТЬСЯ</span></a>
-                </div>
-            </div>
-        </section>
+{{--        <section class="main-page__create-profile create-profile">--}}
+{{--            <div class="create-profile__wrapper">--}}
+{{--                <h3 class="create-profile__title title-l3">{{ $signing->title }}</h3>--}}
+{{--                <p class="create-profile__text">{!! $signing->text !!}</p>--}}
+{{--                <div class="create-profile__btn-wrap">--}}
+{{--                    <a href="#offer_form" class="create-profile__btn button js_offer" data-offer-name="{{ $signing->title }}"><span class="button__text">ЗАПИСАТЬСЯ</span></a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
 
         {{--excluded--}}
-        {{--<section class="main-page__opponents opponents">
+        <section class="main-page__opponents opponents">
             <div class="opponents__header main-info">
                 <h2 class="main-info__title title-l1">Найдите соперника и друга</h2>
                 <p class="main-info__text">Выберите соперника по силам и вступите в спарринг.<br>
@@ -235,7 +282,7 @@
                     <a href="#" class="link">правилам Brave</a> под надзором инструктора и рефери.
                 </p>
             </div>
-        </section>--}}
+        </section>
 
 
         <section class="main-page__reviews reviews">
